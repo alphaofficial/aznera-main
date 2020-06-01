@@ -1,0 +1,663 @@
+.block-number {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8125em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #191919;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out; }
+  .block-number:hover {
+    opacity: 1; }
+  .block-number::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 6px;
+    margin-bottom: 2px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid #191919; }
+  .block-number a:hover,
+  .block-number a:focus {
+    color: #191919; }
+
+.demo-section .main-content .section,
+.demo-topbar .main-content .topbar,
+.demo-navbar .main-content .navbar,
+.demo-header .main-content .header,
+.demo-footer .main-content .footer {
+  margin: 30px 20px 100px;
+  border: 1px solid #f5f6f7;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); }
+
+.demo-topbar .main-content .topbar,
+.demo-navbar .main-content .navbar {
+  position: static;
+  margin: 0; }
+
+.sample-blocks img {
+  border-radius: 0.25rem; }
+  .sample-blocks img.aos-animate {
+    opacity: 0.5 !important; }
+  .sample-blocks img:hover {
+    opacity: 1 !important;
+    -webkit-transition: 0.7s !important;
+    transition: 0.7s !important; }
+
+.sample-blocks a {
+  position: absolute; }
+
+.sample-blocks a:nth-child(1) {
+  -webkit-animation: wobble 4s infinite;
+          animation: wobble 4s infinite;
+  right: 15px;
+  bottom: -20px; }
+
+.sample-blocks a:nth-child(2) {
+  -webkit-animation: wobble 8s infinite;
+          animation: wobble 8s infinite;
+  right: 320px;
+  bottom: 30px; }
+
+.sample-blocks a:nth-child(3) {
+  -webkit-animation: wobble 5s infinite;
+          animation: wobble 5s infinite;
+  right: 0px;
+  bottom: 190px; }
+
+.sample-blocks a:nth-child(4) {
+  -webkit-animation: wobble 6s infinite;
+          animation: wobble 6s infinite;
+  right: 280px;
+  bottom: 180px; }
+
+.sample-blocks a:nth-child(5) {
+  -webkit-animation: wobble 9s infinite;
+          animation: wobble 9s infinite;
+  right: 270px;
+  bottom: 320px; }
+
+.sample-blocks a:nth-child(6) {
+  -webkit-animation: wobble 7s infinite;
+          animation: wobble 7s infinite;
+  right: 20px;
+  bottom: 370px; }
+
+.sample-blocks a:nth-child(7) {
+  -webkit-animation: wobble 5s infinite;
+          animation: wobble 5s infinite;
+  right: 200px;
+  bottom: 470px; }
+
+.sample-blocks a:nth-child(8) {
+  -webkit-animation: wobble 8s infinite;
+          animation: wobble 8s infinite;
+  right: 10px;
+  bottom: 470px; }
+
+.sample-blocks a:nth-child(9) {
+  -webkit-animation: wobble 9s infinite;
+          animation: wobble 9s infinite;
+  right: 0px;
+  bottom: 570px; }
+
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: rotate(-1deg) translate(-5px, -5px);
+            transform: rotate(-1deg) translate(-5px, -5px); }
+  50% {
+    -webkit-transform: rotate(1deg) translate(5px, 5px);
+            transform: rotate(1deg) translate(5px, 5px); }
+  100% {
+    -webkit-transform: rotate(-1deg) translate(-5px, -5px);
+            transform: rotate(-1deg) translate(-5px, -5px); } }
+
+@keyframes wobble {
+  0% {
+    -webkit-transform: rotate(-1deg) translate(-5px, -5px);
+            transform: rotate(-1deg) translate(-5px, -5px); }
+  50% {
+    -webkit-transform: rotate(1deg) translate(5px, 5px);
+            transform: rotate(1deg) translate(5px, 5px); }
+  100% {
+    -webkit-transform: rotate(-1deg) translate(-5px, -5px);
+            transform: rotate(-1deg) translate(-5px, -5px); } }
+
+@media (max-width: 400px) {
+  body > .footer .social a:last-child,
+  body > .footer .nav a:last-child {
+    display: none; } 
+}
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+    
+    .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #EF5A24;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    input:checked + .slider {
+      background-color:#EF5A24;
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+    
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    .cs-shadow {
+      -webkit-box-shadow: 0px 4px 5px 0px rgba(187, 184, 184);
+      -moz-box-shadow: 0px 4px 5px 0px rgba(187, 184, 184);
+      box-shadow: 0px 4px 5px 0px rgba(187, 184, 184);
+    }
+
+    th, td {
+      padding: 0.2em;
+    }
+
+    table td, th {
+      /*border-left: 1px solid #f1f2f3;*/
+      /*border-right: 1px solid #f1f2f3;*/
+    }
+    
+    table td:first-child {
+        border-left: none;
+    }
+    
+    table td:last-child {
+        border-right: none;
+    }
+
+    span .angle-text {
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); 
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -sand-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+
+    .dim-bg {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+    }
+
+    .dot {
+      height: 35px;
+      width: 35px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 2px
+    }
+
+   
+    .cs-placeholder-2::placeholder {
+      color: #4E4E4E4C
+    }
+
+    .cs-placeholder-1::placeholder {
+      color:rgb(250, 170, 142)!important
+    }
+    
+    .cs-input-text-orange {
+      color: #EF5A24
+    }
+    
+    
+  /* Custom radio button The container */
+  .cs-radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default radio button */
+  .cs-radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .cs-radio-checkmark {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .cs-radio-container:hover input ~ .ccs-radio-heckmark {
+    background-color: #ccc;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .cs-radio-container input:checked ~ .cs-radio-checkmark {
+    background-color: #EF5A24;
+  }
+
+  /* Custom radio button The container */
+  .cs-checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default radio button */
+  .cs-checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .cs-checkbox-checkmark {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .cs-checkbox-container:hover input ~ .cs-checkbox-checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .cs-checkbox-container input:checked ~ .cs-checkbox-checkmark {
+    background-color: #EF5A24;
+  }
+  /* Style the indicator (dot/circle) */
+  
+  .cs-spinner {
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    /* transform: rotate(3deg); */
+     /* transform: rotate(0.3rad);/ */
+     /* transform: rotate(3grad); */ 
+     /* transform: rotate(.03turn);  */
+    opacity: 1;
+  }
+  
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
+
+
+  .cs-button-main {
+    background-color: #EF5A24;
+    border: none;
+    border-radius: 2px;
+    color: white;
+  }
+
+  .cs-logo-container, .cs-banner-container {
+    background-size: contain;
+  }
+
+  .my-modal {
+    width: 80vw!important; /* Occupy the 90% of the screen width */
+    max-width: 80%!important;
+    padding: 2px!important;
+  } 
+
+  .pac-container { /*google place autcomplete dropdown*/
+    z-index: 999999!important;
+  }
+
+  lds-roller {
+    display: inline-block;
+    position: relative;
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #EF5A24;
+    margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:focus {
+  border-bottom: 1px solid rgb(249, 123, 77)!important;
+}
+
+textarea:focus {
+  border-bottom: 1px solid rgb(249, 123, 77)!important;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.fa-info-circle .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 83%;
+  margin-left: -60px;
+}
+
+.fa-info-circle .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.fa-info-circle:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+.wrapper{
+  width:200px;
+  height:60px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+.circle{
+  width:20px;
+  height:20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  left:15%;
+  transform-origin: 50%;
+  animation: circle .5s alternate infinite ease;
+}
+
+@keyframes circle{
+  0%{
+      top:60px;
+      height:5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+  }
+  40%{
+      height:20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+  }
+  100%{
+      top:0%;
+  }
+}
+.circle:nth-child(2){
+  left:45%;
+  animation-delay: .2s;
+}
+.circle:nth-child(3){
+  left:auto;
+  right:15%;
+  animation-delay: .3s;
+}
+.shadow{
+  width:20px;
+  height:4px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  top:62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left:15%;
+  filter: blur(1px);
+  animation: shadow .5s alternate infinite ease;
+}
+
+@keyframes shadow{
+  0%{
+      transform: scaleX(1.5);
+  }
+  40%{
+      transform: scaleX(1);
+      opacity: .7;
+  }
+  100%{
+      transform: scaleX(.2);
+      opacity: .4;
+  }
+}
+.shadow:nth-child(4){
+  left: 45%;
+  animation-delay: .2s
+}
+.shadow:nth-child(5){
+  left:auto;
+  right:15%;
+  animation-delay: .3s;
+}
+.wrapper span{
+  position: absolute;
+  top:75px;
+  font-family: 'Lato';
+  font-size: 20px;
+  letter-spacing: 12px;
+  color: #fff;
+  left:15%;
+}
+
+.cs-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background: #00000080 0% 0% no-repeat padding-box;
+}
+
+/* Modal Content */
+.cs-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  /*width: 35%;*/
+  border-radius: 6px;
+}
+
+/* The Close Button */
+.cs-modal-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cs-modal-close:hover,
+.cs-modal-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

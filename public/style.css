@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Belligan";
+    src: url("/assets/fonts/Belligan.woff") format('woff');
+}
+
+h1 {
+    font-size:  64px!important;
+    font-family: 'Belligan', sans-serif;
+    color: #FF6B05
+  }
+  h2 {
+    font-size:  64px!important;
+    font-family: 'Belligan', sans-serif;
+    color: #FF6B05;
+  }
+  h3 {
+    font-size:  20px!important;
+    font-family: 'Belligan', sans-serif;
+  }
+  h4 {
+    font-size:  17px!important;
+    font-family: 'Belligan', sans-serif;
+  }
+  h4 {
+    font-size:  15px!important;
+    font-family: 'Belligan', sans-serif;
+  }
+  h5 {
+    font-size:  15px!important;
+    font-family: 'Belligan', sans-serif;
+  }
+  h6 {
+    font-size:  15px!important;
+    font-family: 'Belligan', sans-serif;
+  }
+  p {
+    font-size:  17px!important;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1em;
+  }
+  small {
+    font-size:  12px!important;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .special {
+    font-size:  70px!important;
+    font-family: 'Quicksand', sans-serif;
+  }
+  label {
+    font-size:  17px;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .nav-link {
+    font-family: 'Belligan', sans-serif;   
+    color: #4C1A16!important
+  }
+
+  .nav-link:hover {
+
+    color: #FF6B05!important
+  }
+
+  .nav-link .active {
+    color: #FF6B05!important
+  }
+
+  .menu-btn:hover{
+      background-color: #FF6B05!important;
+      color: #ffffff!important;
+  }
+
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    color: #fff;
+    display: none;
+}
+
+.overlay .title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.menu-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.menu-overlay .title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.overlay .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.80);
+    width: 100%;
+    margin: 0;
+}
+
+.overlay .description p {
+    margin: 20px;
+}
