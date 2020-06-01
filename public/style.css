@@ -71,21 +71,23 @@ h1 {
   }
 
 
-  .overlay {
+  .overlay:hover {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,1);
     position: absolute;
     top: 0;
     left: 0;
     text-decoration: none;
     color: #fff;
-    display: none;
 }
 
 .overlay .title {
     text-align: center;
-    font-size: 30px;
+    font-size: 57px;
+    font-family: Belligan;
+    margin: 3em auto;
+    color: white;
 }
 
 .menu-overlay {
