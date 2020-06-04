@@ -35,8 +35,15 @@ function Discover () {
                             <source src="/assets/video/discover.ogg" type="video/ogg"/>
                         </video>
                     </div>
+
+                    
                     
                 </div>
+                    <div class="icon-bar">
+                            <a class="socials" href="#"><img src="/assets/img/facebook.svg" alt="FB"/></a>
+                            <a class="socials"  href="#"><img src="/assets/img/twitter.svg" alt="TW"/></a>
+                            <a class="socials"  href="#"><img src="/assets/img/instagram.svg" alt="IG"/></a>
+                    </div>
                 </div>
             </section>
 

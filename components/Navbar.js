@@ -2,7 +2,7 @@
 export default function Navbar(){
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: 'white', top: '0px'}}>
+        <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: 'white', top: '0px', padding: '1em 0'}}>
             <div className="container">
               <div className="navbar-left mr-4">
                 <button className="navbar-toggler" type="button"><span className="navbar-toggler-icon"></span></button>

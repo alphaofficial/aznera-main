@@ -4,9 +4,9 @@ export default function Footer () {
             <div class="container text-center">
 
                 <div class="social social-bg-pale-brand">
-                    <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
-                    <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
-                    <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
+                    <a class="social-facebook socials" href="#"><img src="/assets/img/facebook.svg" alt="FB"/></a>
+                    <a class="social-facebook socials" href="#"><img src="/assets/img/twitter.svg" alt="TW"/></a>
+                    <a class="social-facebook socials" href="#"><img src="/assets/img/instagram.svg" alt="IG"/></a>
                 </div>
 
             </div>

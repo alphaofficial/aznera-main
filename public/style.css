@@ -84,10 +84,26 @@ h1 {
 
 .overlay .title {
     text-align: center;
-    font-size: 57px;
+    font-size: 38px!important;
     font-family: Belligan;
-    margin: 3em auto;
+    margin: 0 auto;
+    position: relative;
+    top: 45%;
     color: white;
+    opacity: 1;
+}
+.overlay .subtext {
+  text-align: center;
+  margin: 3em auto;
+  color: white;
+  opacity: 1;
+}
+
+hr.dash {
+  border: 3px solid #FF6B05;
+  width: 80px;
+  border-radius: 5px;
+  margin: 0 auto;
 }
 
 .menu-overlay {
@@ -118,4 +134,32 @@ h1 {
 
 .overlay .description p {
     margin: 20px;
+}
+
+
+.socials {
+  transform: rotate(90deg);
+  background: transparent!important;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  bottom: 0;
+  right: 0;
+  
+}
+
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
 }
