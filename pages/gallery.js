@@ -10,48 +10,103 @@ function Gallery () {
         <>
             <HeadFile />
             <NavbarMain />
-            <section class="section">
+            <section class="section" style={{backgroundColor: 'white'}}>
                 <div class="container">
                 <div class="row" style={{marginTop: '2em'}}>
-                    <div className="col-md-12 text-center" style={{ marginBottom: '2em'}}>
-                        <h1 class="fw-500">Discover Azmera</h1>
+                    <div className="col-md-12 text-center" style={{ marginBottom: '2em', marginTop: '2em'}}>
+                        <h1 class="fw-500">Gallery</h1>
                         <div style={{width: '100%'}}>
-                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                            <p>Explore Our Home.</p>
                         </div>
                     
                     </div>
 
+                    <div className="col-md-12">
+                        <p style={{textTransform: 'uppercase', fontWeight: 'bold', fontSize: '20px', textAlign: 'left', fontFamily: 'Belligan'}}><span style={{textDecoration: 'underline', color: '#4C1A16', textDecorationThickness: '10%'}}>The</span> <span style={{color: '#FF6B05'}}>Azmera Experience</span></p> 
+                    </div>
                     <div className="col-md-4 text-center">
-                        <div style={{height: '682px', width: '100%', background: 'transparent url(/assets/gallery/01.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
+                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/01.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
+                        </div>
+                    </div>
+                    <div className="col-md-4 text-center">
+                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/02.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
                             <div className="gallery-overlay"></div>
                         </div>
                     </div>
                     <div className="col-md-4 text-center">
-                        <div style={{height: '682px', width: '100%', background: 'transparent url(/assets/gallery/01.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
-
-                        </div>
-                    </div>
-                    <div className="col-md-4 text-center">
-                        <div style={{height: '682px', width: '100%', background: 'transparent url(/assets/gallery/01.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
-
+                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/03.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
+                            <div className="gallery-overlay"></div>
                         </div>
                     </div>
                 </div>
 
+                <div class="row" style={{marginTop: '3em', marginBottom: '8em'}}>
+                    <div className="col-md-4 text-center">
+                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/04.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
+                            <div className="gallery-overlay"></div>
+                        </div>
+                    </div>
+                    <div className="col-md-4 text-center">
+                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/05.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
+                            <div className="gallery-overlay"></div>
+                        </div>
+                    </div>
+                    <div className="col-md-4 text-center">
+                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/06.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
+                            <div className="gallery-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="row" style={{marginTop: '3em'}}>
+                    <div className="col-md-12" >
+                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <p style={{textTransform: 'uppercase', fontWeight: 'bold', fontSize: '20px', textAlign: 'right', fontFamily: 'Belligan'}}><span style={{color: '#4C1A16'}}>Our</span> <span style={{textDecoration: 'underline', textDecorationThickness: '10%', color: '#FF6B05', textDecorationColor: '#4C1A16'}}>Restaurant</span></p> 
+                    </div>
                     <div className="col-md-4 text-center">
-                        <div style={{height: '682px', width: '100%', background: 'transparent url(/assets/gallery/01.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
-
+                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/07.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
+                            <div className="gallery-overlay"></div>
                         </div>
                     </div>
                     <div className="col-md-4 text-center">
-                        <div style={{height: '682px', width: '100%', background: 'transparent url(/assets/gallery/01.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
-
+                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/08.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
+                            <div className="gallery-overlay"></div>
                         </div>
                     </div>
                     <div className="col-md-4 text-center">
-                        <div style={{height: '682px', width: '100%', background: 'transparent url(/assets/gallery/01.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
+                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/09.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
+                            <div className="gallery-overlay"></div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="row" style={{marginTop: '3em', marginBottom: '5em'}}>
+                    <div className="col-md-4 text-center">
+                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/10.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
+                            <div className="gallery-overlay"></div>
+                        </div>
+                    </div>
+                    <div className="col-md-4 text-center">
+                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/11.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
+                            <div className="gallery-overlay"></div>
+                        </div>
+                    </div>
+                    <div className="col-md-4 text-center">
+                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/12.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
+                            <div className="gallery-overlay"></div>
                         </div>
                     </div>
                 </div>

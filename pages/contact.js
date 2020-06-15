@@ -18,10 +18,15 @@ function Contact () {
                             <div className="col-md-10 mx-auto">
                                 <div className="row">
                                     <div className="col-md-6">
-                                        <h3>No 9 Arku Korsa Rd, Roman Ridge Accra </h3>
+                                        <p>No 9 Arku Korsa Rd, Roman Ridge Accra </p>
                                         <p>+233 302 77 06 06</p>
                                         <p>+233 268 02 99 68</p>
                                         <p>+233 558 70 85 94</p>
+                                        <div style={{display: 'flex', marginTop: '2em'}}>
+                                            <a class="" style={{marginRight: '2em'}} href="#"><img src="/assets/img/facebook_white.svg" alt="FB"/></a>
+                                            <a class=""  style={{marginRight: '2em'}} href="#"><img src="/assets/img/twitter_white.svg" alt="TW"/></a>
+                                            <a class=""  href="#"><img src="/assets/img/instagram_white.svg" alt="IG"/></a>
+                                        </div>
                                     </div>
 
                                     <div className="col-md-6">
@@ -64,11 +69,6 @@ function Contact () {
                         </div>
                     </div>
                 </footer>
-                <div class="icon-bar">
-                            <a class="socials" href="#"><img src="/assets/img/facebook.svg" alt="FB"/></a>
-                            <a class="socials"  href="#"><img src="/assets/img/twitter.svg" alt="TW"/></a>
-                            <a class="socials"  href="#"><img src="/assets/img/instagram.svg" alt="IG"/></a>
-                    </div>
             </section>
 
           

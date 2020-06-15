@@ -1,0 +1,84 @@
+import HeadFile from '../components/HeadFile'
+import NavbarMain from '../components/NavbarMain'
+import Header from '../components/Header'
+import Footer from '../components/footer'
+import { useEffect } from 'react';
+
+function Work () {
+
+    return (
+        <>
+            <HeadFile />
+            <NavbarMain />
+            <header class="header text-white h-100 h-fullscreen pb-0 overflow-hidden" style={{backgroundImage: 'url(/assets/img/reservations.png)', backgroundColor: '#262a37'}}>
+                <div class="container text-center">
+                    <div class="row align-items-center h-100">
+
+                    
+                    </div>
+                </div>
+            </header>
+            <section class="section" style={{background: 'white'}}>
+                <div class="container">
+                <div class="row gap-y align-items-center" style={{marginBottom: '10em'}}>
+
+                    <div class="col-md-12 mx-auto">
+                        <h1 class="fw-500" style={{textAlign: 'center', marginTop: '1em', marginBottom: '1em'}}>Work With Us</h1>
+                        <p style={{lineHeight: '1.8em', textAlign:'center'}}>We maintain professional standards for all our employees and are always looking for responsible men and women to</p>
+                        <p style={{color: '#FF6B05', textAlign: 'center'}}>Join The Azmera Team!</p>
+
+                        <div className="row">
+                            <div className="col-md-8 mx-auto">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Name" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '2px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em', borderRadius: '10px', padding: '.5em 1em'}}/>
+                                </div>
+                            </div>
+                            <div className="col-md-8 mx-auto">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Email" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '2px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em', borderRadius: '10px', padding: '.5em 1em'}}/>
+                                </div>
+                            </div>
+                            <div className="col-md-8 mx-auto">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Phonenumber" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '2px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em', borderRadius: '10px', padding: '.5em 1em'}}/>
+                                </div>
+                            </div>
+                            <div className="col-md-8 mx-auto">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Position" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '2px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em', borderRadius: '10px', padding: '.5em 1em'}}/>
+                                </div>
+                            </div>
+                            <div className="col-md-8 mx-auto">
+                                <div class="form-group" style={{marginBottom: '2em'}}>
+                                    <label htmlFor="file" style={{marginTop: '1em'}}>
+                                        <p style={{color: '#4C1A16', margin: '.3em 0'}}>Attach your CV</p>
+                                        <div style={{background: "#4C1A16 0% 0% no-repeat padding-box", color: 'white', height: '30px', fontSize: '14px', width: '115px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>Choose file</div>
+                                    </label>
+                                    <input type="file" name="fileBtn" id="file" placeholder="Choose file" class="custom-form-control" style={{width: '100%', background: 'transparent', display: 'none'}}/>
+                                </div>
+                                <div style={{background: '#FF6B05 0% 0% no-repeat padding-box', color: 'white', height: '30px', fontSize: '14px', width: '214px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', textTransform: 'uppercase', borderRadius: '19px', margin: '0 auto'}}>
+                                    click here to apply
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    
+                    
+                </div>
+                    <div class="icon-bar">
+                            <a class="socials" href="#"><img src="/assets/img/facebook.svg" alt="FB"/></a>
+                            <a class="socials"  href="#"><img src="/assets/img/twitter.svg" alt="TW"/></a>
+                            <a class="socials"  href="#"><img src="/assets/img/instagram.svg" alt="IG"/></a>
+                    </div>
+                </div>
+            </section>
+
+          
+        </>
+    )
+}
+
+  
+export default Work

@@ -18,13 +18,13 @@ function Discover () {
                     </div>
                 </div>
             </header>
-            <section class="section">
+            <section class="section" style={{backgroundColor: 'white'}}>
                 <div class="container">
                 <div class="row gap-y align-items-center" style={{marginBottom: '10em'}}>
 
                     <div class="col-md-7">
                     <h1 class="fw-500">Discover Azmera</h1>
-                    <p style={{lineHeight: '1.8em'}}>As a people, our identity is shaped by our culture. And Like the root of a tree, we are firmly strengthened by the values and elements of this identity. Who we are isn’t merely because of where we are from, but in all we do; the way we talk; the songs we sing and even the food we eat. At Azmera, we serve experiences of a rich Ghanaian culture, that’s spans across all 16 regions. For over 8 years, we have steadily built a brand that merges our flavoursome culture with a quality dining encounter. From a steaming plate of aromatic Jollof served in plantain leaves, to the mouth-watering appeal of palm nut soup is served in earthenware, our food is carefully prepared to your delight, leaving you with a taste of Ghana that can never be forgotten.</p>
+                    <p style={{lineHeight: '1.8em', fontSize: '14px'}}>As a people, our identity is shaped by our culture. And Like the root of a tree, we are firmly strengthened by the values and elements of this identity. Who we are isn’t merely because of where we are from, but in all we do; the way we talk; the songs we sing and even the food we eat. At Azmera, we serve experiences of a rich Ghanaian culture, that’s spans across all 16 regions. For over 8 years, we have steadily built a brand that merges our flavoursome culture with a quality dining encounter. From a steaming plate of aromatic Jollof served in plantain leaves, to the mouth-watering appeal of palm nut soup is served in earthenware, our food is carefully prepared to your delight, leaving you with a taste of Ghana that can never be forgotten.</p>
 
                     <button type="button" className="btn btn-sm btn-primary" style={{background: '#FF6B05', borderColor: '#FF6B05', borderRadius: '41px', fontFamily: 'Quicksand', textTransform: 'capitalize'}}>View Menu</button>
                     </div>
