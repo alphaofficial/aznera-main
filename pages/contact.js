@@ -1,15 +1,12 @@
 import HeadFile from '../components/HeadFile'
 import NavbarMain from '../components/NavbarMain'
-import Header from '../components/Header'
-import Footer from '../components/footer'
+import Layout from '../components/layout'
 import { useEffect } from 'react';
 
 function Contact () {
 
     return (
-        <>
-            <HeadFile />
-            <NavbarMain />
+        <Layout page="contact">
             <section class="section" style={{background: 'url(/assets/img/contact.png) transparent 0% 0% repeat padding-box', backgroundSize: 'contain', height: '100vh', width: '100%'}}>
             
                 <footer class="footer text-white" style={{background: '#4C1A16 0% 0% no-repeat padding-box', opacity: '0.81', position: "fixed", bottom: '0', width: '100%', marginTop: '3em'}}>
@@ -69,10 +66,8 @@ function Contact () {
                         </div>
                     </div>
                 </footer>
-            </section>
-
-          
-        </>
+            </section>  
+        </Layout>
     )
 }
 

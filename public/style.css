@@ -4,12 +4,12 @@
 }
 
 h1 {
-    font-size:  64px!important;
+    font-size:  55px!important;
     font-family: 'Belligan', sans-serif;
     color: #FF6B05
   }
   h2 {
-    font-size:  64px!important;
+    font-size:  50px!important;
     font-family: 'Belligan', sans-serif;
     color: #FF6B05;
   }
@@ -53,7 +53,7 @@ h1 {
 
   .nav-link {
     font-family: 'Belligan', sans-serif;   
-    color: #4C1A16!important
+    color: #4C1A16
   }
 
   .nav-link:hover {

@@ -3,13 +3,12 @@ import NavbarMain from '../components/NavbarMain'
 import Header from '../components/Header'
 import Footer from '../components/footer'
 import { useEffect } from 'react';
+import Layout from '../components/layout';
 
 function Gallery () {
 
     return (
-        <>
-            <HeadFile />
-            <NavbarMain />
+        <Layout page="gallery">
             <section class="section" style={{backgroundColor: 'white'}}>
                 <div class="container">
                 <div class="row" style={{marginTop: '2em'}}>
@@ -117,9 +116,7 @@ function Gallery () {
                     </div>
                 </div>
             </section>
-
-          
-        </>
+        </Layout>
     )
 }
 

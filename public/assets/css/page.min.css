@@ -4051,11 +4051,6 @@ input[type="button"].btn-block {
     list-style: none
 }
 
-.nav-link {
-    display: block;
-    padding: .5rem 1rem;
-    color: #EF5A24!important;
-}
 
 .nav-link:hover,
 .nav-link:focus {
@@ -16713,10 +16708,7 @@ button:focus {
     white-space: normal
 }
 
-.nav-link.active,
-.nav-item.show .nav-link {
-    color: #50a1ff
-}
+
 
 .nav-divider {
     display: block;
@@ -16878,9 +16870,8 @@ button:focus {
     display: block
 }
 
-.nav-sidebar .nav-link.active {
-    color: #50a1ff
-}
+
+
 
 .nav-sidebar .nav-link.active+.nav {
     display: block
@@ -17018,11 +17009,7 @@ button:focus {
     color: rgba(117, 117, 117, 0.65)
 }
 
-.nav-dark .nav-link:hover,
-.nav-dark .nav-link.active,
-.nav-dark .nav-item.show .nav-link {
-    color: #323d47
-}
+
 
 .nav-dark .nav-link.disabled {
     color: #a5b3c7
@@ -21586,12 +21573,7 @@ body:not(.body-scrolled) .topbar.d-flex ~ .navbar {
     background-color: rgba(117, 117, 117, 0.8)
 }
 
-.navbar-dark .nav-navbar>.nav-item>.nav-link,
-.navbar-dark .nav-navbar>.nav-link,
-.navbar-stick-dark.stick .nav-navbar>.nav-item>.nav-link,
-.navbar-stick-dark.stick .nav-navbar>.nav-link {
-    color: rgba(117, 117, 117, 0.8)
-}
+
 
 .navbar-dark .nav-navbar>.nav-item>.nav-link>.arrow,
 .navbar-dark .nav-navbar>.nav-link>.arrow,
@@ -21622,14 +21604,6 @@ body:not(.body-scrolled) .topbar.d-flex ~ .navbar {
     border-top-color: inherit
 }
 
-.navbar-dark .nav-navbar>.nav-item.active>.nav-link,
-.navbar-dark .nav-navbar>.nav-item>.nav-link.active,
-.navbar-dark .nav-navbar>.nav-link.active,
-.navbar-stick-dark.stick .nav-navbar>.nav-item.active>.nav-link,
-.navbar-stick-dark.stick .nav-navbar>.nav-item>.nav-link.active,
-.navbar-stick-dark.stick .nav-navbar>.nav-link.active {
-    color: #323d47
-}
 
 .navbar-dark .nav-navbar>.nav-item.active>.nav-link>.arrow,
 .navbar-dark .nav-navbar>.nav-item>.nav-link.active>.arrow,

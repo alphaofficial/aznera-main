@@ -3,13 +3,12 @@ import NavbarMain from '../components/NavbarMain'
 import Header from '../components/Header'
 import Footer from '../components/footer'
 import { useEffect } from 'react';
+import Layout from '../components/layout';
 
 function Menu () {
 
     return (
-        <>
-            <HeadFile />
-            <NavbarMain />
+        <Layout page="menu">
             <section class="section" style={{backgroundColor: 'white'}}>
                 <div class="container">
                     <div className="row" style={{marginTop: '5em'}}>
@@ -391,7 +390,7 @@ function Menu () {
                     </div>
                 </div>
             </section>
-        </>
+        </Layout>
     )
 }
 

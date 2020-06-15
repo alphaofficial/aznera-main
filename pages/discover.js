@@ -1,15 +1,12 @@
 import HeadFile from '../components/HeadFile'
 import NavbarMain from '../components/NavbarMain'
-import Header from '../components/Header'
-import Footer from '../components/footer'
+import Layout from '../components/layout'
 import { useEffect } from 'react';
 
 function Discover () {
 
     return (
-        <>
-            <HeadFile />
-            <NavbarMain />
+       <Layout page="discover">
             <header class="header text-white h-100 h-fullscreen pb-0 overflow-hidden" style={{backgroundImage: 'url(/assets/img/discover.png)', backgroundColor: '#262a37'}}>
                 <div class="container text-center">
                     <div class="row align-items-center h-100">
@@ -46,9 +43,7 @@ function Discover () {
                     </div>
                 </div>
             </section>
-
-          
-        </>
+        </Layout>
     )
 }
 
