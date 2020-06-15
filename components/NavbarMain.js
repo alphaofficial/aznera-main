@@ -1,4 +1,37 @@
+import Modal from 'react-modal';
+import Reservations from './reservation'
+
 export default function NavbarMain(props){
+
+  const customStyles = {
+    overlay:{
+      backgroundColor: 'rgba(0, 0, 0, 0.75)',
+      padding: '0px'
+    },
+    content : {
+      top                   : '50%',
+      left                  : '50%',
+      right                 : 'auto',
+      bottom                : 'auto',
+      marginRight           : '-50%',
+      transform             : 'translate(-50%, -50%)',
+      padding: '0px'
+    }
+  };
+
+  const [modalIsOpen,setIsOpen] = React.useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+ 
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+   
+  }
+ 
+  function closeModal(){
+    setIsOpen(false);
+  }
 
     return(
         <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: 'white', top: '0px', padding: '1em 0'}}>
@@ -21,10 +54,18 @@ export default function NavbarMain(props){
                   <a className="nav-link" href="/work">Work With Us</a>
                   <a className="nav-link" href="/contact">Contact</a>
                 </nav>
-                <button style={{backgroundColor: '#ffffff', borderColor: '#FF6B05', color: '#FF6B05', borderRadius: '20px', padding: '.5em 2em'}} className="btn btn-sm btn-success menu-btn" href="#">Reservations</button>
+                  <button style={{backgroundColor: '#ffffff', borderColor: '#FF6B05', color: '#FF6B05', borderRadius: '20px', padding: '.5em 2em'}} className="btn btn-sm btn-success menu-btn" onClick={()=>{setIsOpen(true)}}>Reservations</button>
               </section>
 
-            </div>                
+            </div>  
+            <Modal 
+              isOpen={modalIsOpen}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal">
+                  <Reservations callback={closeModal}/>
+            </Modal>              
           </nav>
     )
 }
