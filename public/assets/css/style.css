@@ -481,11 +481,11 @@ input[type=number] {
 }
 
 input:focus {
-  border-bottom: 1px solid rgb(249, 123, 77)!important;
+  /*border-bottom: 1px solid rgb(249, 123, 77)!important;*/
 }
 
 textarea:focus {
-  border-bottom: 1px solid rgb(249, 123, 77)!important;
+  /*border-bottom: 1px solid rgb(249, 123, 77)!important;*/
 }
 
 /* Tooltip container */

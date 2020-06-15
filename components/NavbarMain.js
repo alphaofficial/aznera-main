@@ -24,7 +24,7 @@ export default function NavbarMain(props){
                 <button style={{backgroundColor: '#ffffff', borderColor: '#FF6B05', color: '#FF6B05', borderRadius: '20px', padding: '.5em 2em'}} className="btn btn-sm btn-success menu-btn" href="#">Reservations</button>
               </section>
 
-            </div>
+            </div>                
           </nav>
     )
 }

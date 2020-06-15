@@ -80,6 +80,7 @@ h1 {
     left: 0;
     text-decoration: none;
     color: #fff;
+    opacity: .8;
   }
 
   .gallery-overlay:hover {
