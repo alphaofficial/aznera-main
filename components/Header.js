@@ -11,7 +11,7 @@ export default function Header(){
                 <div class="col-md-2 col-sm-12">
                     <div class="row">
                         <div className="col-12" style={{height: '50vh',  margin: '0px', padding: '0px', background: 'url(/assets/img/home02.png) no-repeat', backgroundSize: 'cover'}}>
-                            <a href="/menu" className="overlay"><h2 className="title home-title">Menu <hr className="dash" /></h2></a>
+                            <a href="/gallery" className="overlay"><h2 className="title home-title">Gallery<hr className="dash" /></h2></a>
                         </div>
                         <div className="col-12" style={{height: '50vh',  margin: '0px', padding: '0px', background: 'url(/assets/img/home03.png) no-repeat', backgroundSize: 'cover'}}>
                             <a href="/work" className="overlay"><h2 className="title home-title">Work <hr className="dash" /></h2></a>
@@ -19,7 +19,7 @@ export default function Header(){
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12"  style={{height: '100vh',  margin: '0px', padding: '0px', background: 'url(/assets/img/home04.png) no-repeat', backgroundSize: 'cover'}}>
-                    <a href="/gallery" className="overlay"><h2 className="title home-title">Gallery<hr className="dash" /></h2></a>
+                    <a href="/menu" className="overlay"><h2 className="title home-title">Menu <hr className="dash" /></h2></a>
                 </div>
                 <div class="col-md-3 col-sm-12"  style={{height: '100vh',  margin: '0px', padding: '0px', background: 'url(/assets/img/home05.png) no-repeat', backgroundSize: 'cover'}}>
                         <a href="/contact" className="overlay"><h2 className="title home-title">Contact<hr className="dash" /></h2></a>

@@ -20,9 +20,9 @@ function Contact () {
                                         <p>+233 268 02 99 68</p>
                                         <p>+233 558 70 85 94</p>
                                         <div style={{display: 'flex', marginTop: '2em'}}>
-                                            <a class="" style={{marginRight: '2em'}} href="#"><img src="/assets/img/facebook_white.svg" alt="FB"/></a>
-                                            <a class=""  style={{marginRight: '2em'}} href="#"><img src="/assets/img/twitter_white.svg" alt="TW"/></a>
-                                            <a class=""  href="#"><img src="/assets/img/instagram_white.svg" alt="IG"/></a>
+                                            <a class="" style={{marginRight: '2em'}} href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook_white.svg" alt="FB"/></a>
+                                            <a class=""  style={{marginRight: '2em'}} href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter_white.svg" alt="TW"/></a>
+                                            <a class=""  href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram_white.svg" alt="IG"/></a>
                                         </div>
                                     </div>
 

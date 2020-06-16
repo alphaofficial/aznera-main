@@ -67,9 +67,9 @@ function Work () {
                     
                 </div>
                     <div class="icon-bar">
-                            <a class="socials" href="#"><img src="/assets/img/facebook.svg" alt="FB"/></a>
-                            <a class="socials"  href="#"><img src="/assets/img/twitter.svg" alt="TW"/></a>
-                            <a class="socials"  href="#"><img src="/assets/img/instagram.svg" alt="IG"/></a>
+                            <a class="socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
+                            <a class="socials"  href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
+                            <a class="socials"  href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
                     </div>
                 </div>
             </section>

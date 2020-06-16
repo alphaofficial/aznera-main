@@ -2,10 +2,44 @@ import HeadFile from '../components/HeadFile'
 import NavbarMain from '../components/NavbarMain'
 import Header from '../components/Header'
 import Footer from '../components/footer'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Layout from '../components/layout';
+import Lightbox from 'react-image-lightbox';
 
 function Gallery () {
+
+    const images = [
+        "/assets/gallery/01.jpg",
+        "/assets/gallery/02.jpg",
+        "/assets/gallery/03.jpg",
+        "/assets/gallery/04.jpg",
+        "/assets/gallery/05.jpg",
+        "/assets/gallery/06.jpg",
+        "/assets/gallery/07.jpg",
+        "/assets/gallery/08.jpg",
+        "/assets/gallery/09.jpg",
+        "/assets/gallery/10.jpg",
+        "/assets/gallery/11.jpg",
+        "/assets/gallery/12.jpg",
+    ]
+
+    /*const images1 = [
+        "/assets/images/gallery/01.jpg",
+        "/assets/images/gallery/02.jpg",
+        "/assets/images/gallery/03.jpg",
+        "/assets/images/gallery/04.jpg",
+        "/assets/images/gallery/05.jpg",
+        "/assets/images/gallery/06.jpg",
+        "/assets/images/gallery/07.jpg",
+        "/assets/images/gallery/08.jpg",
+        "/assets/images/gallery/09.jpg",
+        "/assets/images/gallery/10.jpg",
+    ]*/
+
+    const [photoIndex, setPhotoIndex] = useState(0)
+    //const [photoIndex1, setPhotoIndex1] = useState(0)
+    const [isOpen, setOpen] = useState(0)
+    //const [isOpen1, setOpen1] = useState(0)
 
     return (
         <Layout page="gallery">
@@ -24,18 +58,18 @@ function Gallery () {
                         <p style={{textTransform: 'uppercase', fontWeight: 'bold', fontSize: '20px', textAlign: 'left', fontFamily: 'Belligan'}}><span style={{textDecoration: 'underline', color: '#4C1A16', textDecorationThickness: '10%'}}>The</span> <span style={{color: '#FF6B05'}}>Azmera Experience</span></p> 
                     </div>
                     <div className="col-md-4 text-center">
-                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(0); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                         <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/01.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
                         </div>
                     </div>
                     <div className="col-md-4 text-center">
-                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(1); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                         <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/02.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
                             <div className="gallery-overlay"></div>
                         </div>
                     </div>
                     <div className="col-md-4 text-center">
-                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(2); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                         <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/03.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
                             <div className="gallery-overlay"></div>
                         </div>
@@ -44,19 +78,19 @@ function Gallery () {
 
                 <div class="row" style={{marginTop: '3em', marginBottom: '8em'}}>
                     <div className="col-md-4 text-center">
-                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(3); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                         <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/04.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
                             <div className="gallery-overlay"></div>
                         </div>
                     </div>
                     <div className="col-md-4 text-center">
-                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(5); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                         <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/05.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
                             <div className="gallery-overlay"></div>
                         </div>
                     </div>
                     <div className="col-md-4 text-center">
-                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(5); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                         <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/06.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
                             <div className="gallery-overlay"></div>
                         </div>
@@ -66,23 +100,22 @@ function Gallery () {
 
                 <div class="row" style={{marginTop: '3em'}}>
                     <div className="col-md-12" >
-                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
                         <p style={{textTransform: 'uppercase', fontWeight: 'bold', fontSize: '20px', textAlign: 'right', fontFamily: 'Belligan'}}><span style={{color: '#4C1A16'}}>Our</span> <span style={{textDecoration: 'underline', textDecorationThickness: '10%', color: '#FF6B05', textDecorationColor: '#4C1A16'}}>Restaurant</span></p> 
                     </div>
                     <div className="col-md-4 text-center">
-                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(6); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                         <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/07.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
                             <div className="gallery-overlay"></div>
                         </div>
                     </div>
                     <div className="col-md-4 text-center">
-                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(7); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                         <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/08.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
                             <div className="gallery-overlay"></div>
                         </div>
                     </div>
                     <div className="col-md-4 text-center">
-                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(8); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                         <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/09.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
                             <div className="gallery-overlay"></div>
                         </div>
@@ -91,28 +124,57 @@ function Gallery () {
 
                 <div class="row" style={{marginTop: '3em', marginBottom: '5em'}}>
                     <div className="col-md-4 text-center">
-                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(9); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                         <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/10.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
                             <div className="gallery-overlay"></div>
                         </div>
                     </div>
                     <div className="col-md-4 text-center">
-                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(10); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                         <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/11.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
                             <div className="gallery-overlay"></div>
                         </div>
                     </div>
                     <div className="col-md-4 text-center">
-                        <a href="#" className="gallery-overlay"><h2 className="title">Discover Azmera</h2></a>
+                        <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(11); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                         <div style={{height: '650px', width: '100%', background: 'transparent url(/assets/gallery/12.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover'}}>
                             <div className="gallery-overlay"></div>
                         </div>
                     </div>
                 </div>
-                <div class="icon-bar">
-                            <a class="socials" href="#"><img src="/assets/img/facebook.svg" alt="FB"/></a>
-                            <a class="socials"  href="#"><img src="/assets/img/twitter.svg" alt="TW"/></a>
-                            <a class="socials"  href="#"><img src="/assets/img/instagram.svg" alt="IG"/></a>
+                {isOpen && (
+                    <Lightbox
+                        mainSrc={images[photoIndex]}
+                        nextSrc={images[(photoIndex + 1) % images.length]}
+                        prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+                        onCloseRequest={() => setOpen() }
+                        onMovePrevRequest={() =>
+                            setPhotoIndex((photoIndex + images.length - 1) % images.length)
+                        }
+                        onMoveNextRequest={() =>
+                            setPhotoIndex((photoIndex + 1) % images.length)
+                        }
+                    />
+                )}
+
+                {/*isOpen1 && (
+                    <Lightbox
+                        mainSrc={images1[photoIndex1]}
+                        nextSrc={images1[(photoIndex1 + 1) % images1.length]}
+                        prevSrc={images1[(photoIndex1 + images1.length - 1) % images1.length]}
+                        onCloseRequest={() => setOpen1() }
+                        onMovePrevRequest={() =>
+                            setPhotoIndex1((photoIndex1 + images1.length - 1) % images1.length)
+                        }
+                        onMoveNextRequest={() =>
+                            setPhotoIndex1((photoIndex1 + 1) % images1.length)
+                        }
+                    />
+                    )*/}
+                    <div class="icon-bar">
+                            <a class="socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
+                            <a class="socials"  href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
+                            <a class="socials"  href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
                     </div>
                 </div>
             </section>
