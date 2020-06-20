@@ -5,6 +5,14 @@ import { useEffect } from 'react';
 
 function Discover () {
 
+
+    function f (){
+        if(event.target.nodeName.toLowerCase() != 'a') {
+            //window.open(this.querySelector('.bage_title').href);
+            return 0;
+        }
+    }
+
     return (
        <Layout page="discover">
             <header class="header text-white h-100 h-fullscreen pb-0 overflow-hidden" style={{backgroundImage: 'url(/assets/img/discover.png)', backgroundColor: '#262a37'}}>
@@ -31,6 +39,15 @@ function Discover () {
                             <source src="/assets/video/discover.mp4" type="video/mp4"/>
                             <source src="/assets/video/discover.ogg" type="video/ogg"/>
                         </video>
+                    </div>
+
+                    <div className="col-md-12">
+                    <div class="en" id="delivery_takeout_rect" onClick={f}>
+                        <a href="https://t.restaurantguru.com/Azmera-Restaurant-Accra" class="bage_header" target="_blank">Azmera Restaurant</a>
+                        
+                        <div class="bage_wrapper"><div><div class="bage_icon" style={{background: "url('https://restaurantguru.com/css/badge/img/delivery_white.svg') no-repeat center"}}>&nbsp;</div><div class="bage_city"><span>Best food delivery</span><span class="bage_city_name">in Accra</span></div></div></div>
+                        
+                        <a href="https://restaurantguru.com" target="_blank" class="bage_title">Restaurant Guru 2020</a></div>
                     </div>
 
                     
