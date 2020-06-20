@@ -27,26 +27,27 @@ function Contact () {
                                     </div>
 
                                     <div className="col-md-6">
-                                    <form>
+                                    <form action="https://formspree.io/reservations@azmerarestaurant.com" method="POST"> 
+                                    <input type="text" hidden={true} name="Website: Contact us" />
                                         <div className="row">
                                             <div className="col-md-6">
                                                 <div class="form-group">
-                                                    <input type="text" placeholder="Name" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '3px solid #ffffff', color: '#ffffff', padding: '.2em .5em'}}/>
+                                                    <input type="text" name="name" placeholder="Name" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '3px solid #ffffff', color: '#ffffff', padding: '.2em .5em'}}/>
                                                 </div>
                                             </div>
                                             <div className="col-md-6">
                                                 <div class="form-group">
-                                                    <input type="email" placeholder="Email" class="custom-form-control" id="email" style={{width: '100%', background: 'transparent', border: '3px solid #ffffff', color: '#ffffff', padding: '.2em .5em'}}/>
+                                                    <input type="email" name="email" placeholder="Email" class="custom-form-control" id="email" style={{width: '100%', background: 'transparent', border: '3px solid #ffffff', color: '#ffffff', padding: '.2em .5em'}}/>
                                                 </div>
                                             </div>
                                             <div className="col-md-12">
                                                 <div class="form-group">
-                                                    <textarea placeholder="Your message" class="custom-form-control-textarea" id="message" rows="3" style={{width: '100%', background: 'transparent', border: '3px solid #ffffff', color: '#ffffff', padding: '.2em .5em'}}></textarea>
+                                                    <textarea placeholder="Your message" name="message" class="custom-form-control-textarea" id="message" rows="3" style={{width: '100%', background: 'transparent', border: '3px solid #ffffff', color: '#ffffff', padding: '.2em .5em'}}></textarea>
                                                 </div>
                                             </div>
                                             <div className="col-md-6">
                                                 <div class="form-group">
-                                                    <button type="button" class="btn btn-sm btn-primary" style={{width: '100%', background: '#FFFFFF 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#4C1A16', borderRadius: '39px', opacity: '1', color: '#4C1A16'}}>Send</button>
+                                                    <button type="submit" class="btn btn-sm btn-primary" style={{width: '100%', background: '#FFFFFF 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#4C1A16', borderRadius: '39px', opacity: '1', color: '#4C1A16'}}>Send</button>
                                                 </div>
                                             </div>
                                         </div>

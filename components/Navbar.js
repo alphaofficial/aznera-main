@@ -1,6 +1,7 @@
 import React from 'react'
 import Modal from 'react-modal';
 import Reservations from './reservation'
+import { navigate } from '../utils/functions';
 
 export default function Navbar(){
 
@@ -39,7 +40,7 @@ export default function Navbar(){
             <div className="container-fluid">
               <div className="navbar-left mr-4">
                 <button className="navbar-toggler" type="button"><span className="navbar-toggler-icon"></span></button>
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="/">
                   <img className="logo-dark" src="/assets/img/logo-regular.png" alt="logo"/>
                   <img className="logo-light" src="/assets/img/logo-white.png" alt="logo"/>
                 </a>
@@ -50,6 +51,7 @@ export default function Navbar(){
 
                 <div className="ml-auto">
                 <button style={{backgroundColor: '#ffffff', borderColor: '#FF6B05', color: '#FF6B05', borderRadius: '20px', padding: '.5em 2em'}} className="btn btn-sm btn-success menu-btn" onClick={()=>{setIsOpen(true)}}>Reservations</button>
+                <span style={{cursor: 'pointer'}} onClick={()=>{navigate("shop")}}><img src="/assets/img/shop.png" alt="..." style={{width: '10%', marginLeft: '2em'}} /></span>
                 </div>
               </section>
             </div>

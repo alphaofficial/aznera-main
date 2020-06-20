@@ -1,7 +1,8 @@
-export const doSomething = () => {
-    return 1;
-}
+import Router from 'next/router'
 
-export const doAnother = () => {
-    return 2;
+export const navigate = (pagename="", query=null) => {
+    Router.push({
+        pathname: `/${pagename}`,
+        query: query,
+    })
 }

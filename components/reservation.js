@@ -40,7 +40,7 @@ function Reservations (props) {
                             </div>
                         </div>
                         <div style={{textAlign: 'center'}}>
-                            <button disabled={time && date && people ? false : true} className="submit" style={{border: '1px solid #4C1A16', borderRadius:'17px', textAlign:'center', margin: '0 auto', width: '140px', fontSize: '14px', color: '#4C1A16', background: 'transparent'}}>
+                            <button type="submit" disabled={time && date && people ? false : true} className="submit" style={{border: '1px solid #4C1A16', borderRadius:'17px', textAlign:'center', margin: '0 auto', width: '140px', fontSize: '14px', color: '#4C1A16', background: 'transparent'}}>
                                 SUBMIT
                             </button>
                         </div>

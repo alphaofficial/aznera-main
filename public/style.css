@@ -117,11 +117,14 @@ h1 {
     color: white;
     opacity: 1;
 }
+
 .overlay .subtext {
   text-align: center;
   margin: 3em auto;
   color: white;
   opacity: 1;
+  position: relative;
+  top: 40%;
 }
 
 hr.dash {

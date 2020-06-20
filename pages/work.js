@@ -20,7 +20,8 @@ function Work () {
             <section class="section" style={{background: 'white'}}>
                 <div class="container">
                 <div class="row gap-y align-items-center" style={{marginBottom: '10em'}}>
-
+                    <form action="https://formspree.io/reservations@azmerarestaurant.com" method="POST"> 
+                    <input type="text" hidden={true} name="Website: Work With Us" />
                     <div class="col-md-12 mx-auto">
                         <h1 class="fw-500" style={{textAlign: 'center', marginTop: '1em', marginBottom: '1em'}}>Work With Us</h1>
                         <p style={{lineHeight: '1.8em', textAlign:'center'}}>We maintain professional standards for all our employees and are always looking for responsible men and women to</p>
@@ -29,22 +30,33 @@ function Work () {
                         <div className="row">
                             <div className="col-md-8 mx-auto">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Name" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '2px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em', borderRadius: '10px', padding: '.5em 1em'}}/>
+                                    <input type="text" name="name" placeholder="Name" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '2px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em', borderRadius: '10px', padding: '.5em 1em'}}/>
                                 </div>
                             </div>
                             <div className="col-md-8 mx-auto">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Email" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '2px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em', borderRadius: '10px', padding: '.5em 1em'}}/>
+                                    <input type="text" name="email" placeholder="Email" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '2px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em', borderRadius: '10px', padding: '.5em 1em'}}/>
                                 </div>
                             </div>
                             <div className="col-md-8 mx-auto">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Phonenumber" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '2px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em', borderRadius: '10px', padding: '.5em 1em'}}/>
+                                    <input type="text" name="phonenumber" placeholder="Phonenumber" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '2px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em', borderRadius: '10px', padding: '.5em 1em'}}/>
                                 </div>
                             </div>
                             <div className="col-md-8 mx-auto">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Position" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '2px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em', borderRadius: '10px', padding: '.5em 1em'}}/>
+                                    <select name="position" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '2px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em', borderRadius: '10px', padding: '.5em 1em'}}>
+                                        <option>Position</option>
+                                        <option value="Cook">Cook</option>
+                                        <option value="Cleaner">Cleaner</option>
+                                        <option value="Buffet Attendant">Buffet Attendant</option>
+                                        <option value="Delivery Rider">Delivery Rider</option>
+                                        <option value="Waiter/ Waitress">Waiter/ Waitress</option>
+                                        <option value="Host/ Hostress">Host/ Hostess</option>
+                                        <option value="Kitchen Assistant">Kitchen Assistant</option>
+                                        <option value="Cashier">Cashier</option>
+                                        <option value="Front Desk Executives">Front Desk Executive</option>
+                                    </select>
                                 </div>
                             </div>
                             <div className="col-md-8 mx-auto">
@@ -53,16 +65,17 @@ function Work () {
                                         <p style={{color: '#4C1A16', margin: '.3em 0'}}>Attach your CV</p>
                                         <div style={{background: "#4C1A16 0% 0% no-repeat padding-box", color: 'white', height: '30px', fontSize: '14px', width: '115px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>Choose file</div>
                                     </label>
-                                    <input type="file" name="fileBtn" id="file" placeholder="Choose file" class="custom-form-control" style={{width: '100%', background: 'transparent', display: 'none'}}/>
+                                    <input type="file" name="attachment" id="file" placeholder="Choose file" class="custom-form-control" style={{width: '100%', background: 'transparent', display: 'none'}}/>
                                 </div>
-                                <div style={{background: '#FF6B05 0% 0% no-repeat padding-box', color: 'white', height: '30px', fontSize: '14px', width: '214px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', textTransform: 'uppercase', borderRadius: '19px', margin: '0 auto'}}>
+                                <button type="submit" style={{background: '#FF6B05 0% 0% no-repeat padding-box', color: 'white', height: '30px', fontSize: '14px', width: '214px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', textTransform: 'uppercase', borderRadius: '19px', margin: '0 auto'}}>
                                     click here to apply
-                                </div>
+                                </button>
                             </div>
                             
                         </div>
 
                     </div>
+                    </form>
                     
                     
                 </div>

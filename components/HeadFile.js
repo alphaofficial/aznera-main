@@ -10,6 +10,7 @@ export default function HeadFile(){
             <meta name="keywords" content=""/>
             <title>Azmera</title>
             <link rel="stylesheet" href="/assets/css/page.min.css" />
+            <link href="https://restaurantguru.com/css/badge/delivery_takeaway/delivery_rect_large.css" rel="stylesheet"/>
             <script type="text/javascript" src="/assets/js/page.min.js"></script>
         </Head>
     )
