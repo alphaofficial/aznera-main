@@ -11,7 +11,9 @@ export default function HeadFile(){
             <title>Azmera</title>
             <link rel="stylesheet" href="/assets/css/page.min.css" />
             <link href="https://restaurantguru.com/css/badge/delivery_takeaway/delivery_rect_large.css" rel="stylesheet"/>
+            <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
             <script type="text/javascript" src="/assets/js/page.min.js"></script>
+            
         </Head>
     )
 }

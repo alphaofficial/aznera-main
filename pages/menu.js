@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Footer from '../components/footer'
 import { useEffect } from 'react';
 import Layout from '../components/layout';
+import Media from 'react-media';
 
 function Menu () {
 
@@ -151,7 +152,7 @@ function Menu () {
                         <div className="col-md-12" style={{marginBottom: '5em'}}>
                             <div className="row">
                                 <div className="col-md-12 mx-auto">
-                                    <table style={{border: 'none', margin: '0 auto'}}>
+                                    <table className="table-responsive" style={{border: 'none', margin: '0 auto'}}>
                                         <thead>
                                             <tr>
                                                 <th></th>
@@ -380,16 +381,32 @@ function Menu () {
 
                     </div>
 
-
-
-
+                </div>
+            </section>
+            <Media query="(min-width: 1024px)">
+            {matches =>
+                matches ? (
                     <div class="icon-bar">
                             <a class="socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
                             <a class="socials"  href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
                             <a class="socials"  href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
                     </div>
-                </div>
-            </section>
+                ):
+                (
+                    <footer class="footer" style={{backgroundColor: 'white'}}>
+                        <div class="container text-center">
+
+                            <div class="social social-bg-pale-brand">
+                                <a class="social-facebook socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
+                                <a class="social-facebook socials" href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
+                                <a class="social-facebook socials" href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
+                            </div>
+
+                        </div>
+                    </footer>
+                )
+            }
+            </Media>
         </Layout>
     )
 }
