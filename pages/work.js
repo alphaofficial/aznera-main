@@ -4,19 +4,30 @@ import Header from '../components/Header'
 import Footer from '../components/footer'
 import { useEffect } from 'react';
 import Layout from '../components/layout';
+import Media from 'react-media';
 
 function Work () {
 
     return (
         <Layout page="work">
-            <header class="header text-white h-100 h-fullscreen pb-0 overflow-hidden" style={{backgroundImage: 'url(/assets/img/reservations.png)', backgroundColor: '#262a37'}}>
-                <div class="container text-center">
-                    <div class="row align-items-center h-100">
+            <Media query="(min-width: 1024px)">
+            {matches =>
+                matches ? (
+                    <header class="header text-white h-100 h-fullscreen pb-0 overflow-hidden" style={{backgroundImage: 'url(/assets/img/reservations.png)', backgroundColor: '#262a37'}}>
+                        <div class="container text-center">
+                            <div class="row align-items-center h-100">
 
-                    
-                    </div>
-                </div>
-            </header>
+                            
+                            </div>
+                        </div>
+                    </header>
+                ):
+                (
+                    <img src="/assets/img/reservations.png" style={{paddingTop: '2em'}}/>
+                )
+            }
+            </Media>
+            
             <section class="section" style={{background: 'white'}}>
                 <div class="container">
                 <div class="row gap-y align-items-center" style={{marginBottom: '10em'}}>
@@ -67,9 +78,11 @@ function Work () {
                                     </label>
                                     <input type="file" name="attachment" id="file" placeholder="Choose file" class="custom-form-control" style={{width: '100%', background: 'transparent', display: 'none'}}/>
                                 </div>
-                                <button type="submit" style={{background: '#FF6B05 0% 0% no-repeat padding-box', color: 'white', height: '30px', fontSize: '14px', width: '214px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', textTransform: 'uppercase', borderRadius: '19px', margin: '0 auto'}}>
-                                    click here to apply
-                                </button>
+                                <div style={{textAlign: 'center'}}>
+                                    <button type="submit" class="btn btn-sm btn-primary" style={{width: '50%', background: '#FF6B05 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#FF6B05', borderRadius: '39px', opacity: '1', color: 'white'}}>click here to apply</button>
+                                </div>
+                                
+                               
                             </div>
                             
                         </div>
@@ -79,13 +92,33 @@ function Work () {
                     
                     
                 </div>
+                </div>
+            </section>
+
+            <Media query="(min-width: 1024px)">
+            {matches =>
+                matches ? (
                     <div class="icon-bar">
                             <a class="socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
                             <a class="socials"  href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
                             <a class="socials"  href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
                     </div>
-                </div>
-            </section>
+                ):
+                (
+                    <footer class="footer" style={{backgroundColor: 'white'}}>
+                        <div class="container text-center">
+
+                            <div class="social social-bg-pale-brand">
+                                <a class="social-facebook socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
+                                <a class="social-facebook socials" href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
+                                <a class="social-facebook socials" href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
+                            </div>
+
+                        </div>
+                    </footer>
+                )
+            }
+            </Media>
         </Layout>
     )
 }

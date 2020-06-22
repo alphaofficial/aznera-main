@@ -3,6 +3,8 @@ import Reservations from './reservation'
 import { useState, useEffect } from 'react';
 import Media from 'react-media';
 
+import { useMediaQuery } from 'react-responsive'
+
 export default function NavbarMain(props){
 
   const customStyles = {
@@ -20,6 +22,17 @@ export default function NavbarMain(props){
       padding: '0px'
     }
   };
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-device-width: 1224px)'
+  })
+  const isBigScreen = useMediaQuery({ query: '(min-device-width: 1824px)' })
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const isTabletOrMobileDevice = useMediaQuery({
+      query: '(max-device-width: 1224px)'
+  })
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
   const [modalIsOpen,setIsOpen] = React.useState(false);
   function openModal() {
@@ -50,9 +63,8 @@ export default function NavbarMain(props){
   }, [props.page])
 
     return(
-      <Media query="(min-width: 1024px)">
-          {matches =>
-            matches ? (
+        <>
+        {isDesktopOrLaptop &&
               <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: 'white', top: '0px', padding: '1em 0'}}>
                   <div className="container-fluid">
 
@@ -87,7 +99,9 @@ export default function NavbarMain(props){
                         <Reservations callback={closeModal}/>
                   </Modal>              
                 </nav>
-            ) : (
+       } 
+
+       {isTabletOrMobile &&
               <nav className="navbar navbar-raw navbar-expand-lg navbar-dark navbar-stick-dark" style={{padding: '0px', textAlign: 'right', marginTop: '0', position: 'fixed', top: 0, background: 'white'}}  data-navbar="fixed" >
                   <div className="container">
                     <div className="navbar-left">
@@ -96,7 +110,7 @@ export default function NavbarMain(props){
                       </a>
                     </div>
                     <div className="ml-auto" style={{float: 'right', textAlign: 'right'}}>
-                      <img src="/assets/img/shop.png" alt="..." style={{width: '15%'}} />
+                        <img onClick={()=>{navigate("shop")}} src="/assets/img/shop.png" alt="..." style={{width: '15%'}} />
                         <button className="btn btn-xs btn-secondary" onClick={toggleNav} style={{backgroundColor:'transparent', border: 'none', fontSize: '25px', color: 'black'}}>{toggle ? <i className="fa fa-close"></i> : <i className="fa fa-bars"></i>}</button>                  
                     </div>
                   </div>
@@ -113,7 +127,7 @@ export default function NavbarMain(props){
                           <a className="mobile-menu-link" href="/work">Work With Us</a>
                           <a className="mobile-menu-link" style={{borderBottomRightRadius: '35px'}}  href="/contact">Contact</a>
                         </nav>
-                        <button style={{backgroundColor: '#ffffff', borderColor: '#FF6B05', color: '#FF6B05', borderRadius: '20px', padding: '.5em 2em'}} className="btn btn-sm btn-success menu-btn" onClick={()=>{setIsOpen(true)}}>Reservations</button>
+                        <button style={{backgroundColor: '#ffffff', borderColor: '#FF6B05', color: '#FF6B05', borderRadius: '20px', padding: '.5em 2em'}} className="btn btn-sm btn-success menu-btn" onClick={()=>{navigate("reservations")}}>Reservations</button>
                       </div>
                     </div>
 
@@ -128,8 +142,8 @@ export default function NavbarMain(props){
                   </div>
 
               </nav>
-            )
-          }
-        </Media>
+       }
+
+       </>
     )
 }

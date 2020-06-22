@@ -6,8 +6,19 @@ import { useEffect, useState } from 'react';
 import Layout from '../components/layout';
 import Lightbox from 'react-image-lightbox';
 import Media from 'react-media';
+import { useMediaQuery } from 'react-responsive'
 
 function Gallery () {
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-device-width: 1224px)'
+      })
+    const isBigScreen = useMediaQuery({ query: '(min-device-width: 1824px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+    const isTabletOrMobileDevice = useMediaQuery({
+        query: '(max-device-width: 1224px)'
+    })
+    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+    const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
     const images = [
         "/assets/gallery/01.jpg",
@@ -24,19 +35,6 @@ function Gallery () {
         "/assets/gallery/12.jpg",
     ]
 
-    /*const images1 = [
-        "/assets/images/gallery/01.jpg",
-        "/assets/images/gallery/02.jpg",
-        "/assets/images/gallery/03.jpg",
-        "/assets/images/gallery/04.jpg",
-        "/assets/images/gallery/05.jpg",
-        "/assets/images/gallery/06.jpg",
-        "/assets/images/gallery/07.jpg",
-        "/assets/images/gallery/08.jpg",
-        "/assets/images/gallery/09.jpg",
-        "/assets/images/gallery/10.jpg",
-    ]*/
-
     const [photoIndex, setPhotoIndex] = useState(0)
     //const [photoIndex1, setPhotoIndex1] = useState(0)
     const [isOpen, setOpen] = useState(0)
@@ -44,9 +42,7 @@ function Gallery () {
 
     return (
         <Layout page="gallery">
-            <Media query="(min-width: 1024px)">
-            {matches =>
-                matches ? (
+            {isDesktopOrLaptop &&
                     <section class="section" style={{backgroundColor: 'white'}}>
                         <div class="container">
                         <div class="row" style={{marginTop: '2em'}}>
@@ -161,19 +157,14 @@ function Gallery () {
                             />
                         )}
 
-                            <div class="icon-bar">
-                                    <a class="socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
-                                    <a class="socials"  href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
-                                    <a class="socials"  href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
-                            </div>
                         </div>
                     </section>
-                ):
-                (
+                }
+                {isTabletOrMobile &&
                     <section class="section" style={{backgroundColor: 'white'}}>
                         <div class="container">
                         <div class="row" style={{marginTop: '2em'}}>
-                            <div className="col-md-12 text-center" style={{ marginBottom: '2em', marginTop: '2em'}}>
+                            <div className="col-md-12 col-sm-12 text-center" style={{ marginBottom: '2em', marginTop: '2em'}}>
                                 <h1 class="fw-500">Gallery</h1>
                                 <div style={{width: '100%'}}>
                                     <p>Explore Our Home.</p>
@@ -181,7 +172,7 @@ function Gallery () {
                             
                             </div>
 
-                            <div className="col-sm-12 text-center">
+                            <div className="col-md-12 col-sm-12 text-center">
                                 <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(0); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                                 <div style={{height: '424px', width: '80%', background: 'transparent url(/assets/gallery/01.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover', margin: '0 auto'}}>
                                 </div>
@@ -193,11 +184,10 @@ function Gallery () {
                         </div>
 
 
-                        <div class="row" style={{marginTop: '3em', marginBottom: '5em'}}>
-                            <div className="col-md-4 text-center">
+                        <div class="row" style={{marginTop: '3em'}}>
+                            <div className="col-sm-12 text-center">
                                 <a href="#" className="gallery-overlay" onClick={()=>{setPhotoIndex(8); setOpen(true)}}><h2 className="title">Discover Azmera</h2></a>
                                 <div style={{height: '424px', width: '80%', background: 'transparent url(/assets/gallery/09.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover', margin: '0 auto'}}>
-                                    <div className="gallery-overlay"></div>
                                 </div>
                             </div>
                             <div style={{textAlign: 'center', margin: '1em auto'}}>
@@ -222,20 +212,17 @@ function Gallery () {
 
                         </div>
                     </section>
-                )
             }
-            </Media>
 
-            <Media query="(min-width: 1024px)">
-            {matches =>
-                matches ? (
+            {isDesktopOrLaptop &&
                     <div class="icon-bar">
                             <a class="socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
                             <a class="socials"  href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
                             <a class="socials"  href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
                     </div>
-                ):
-                (
+            }
+            
+            {isTabletOrMobile &&
                     <footer class="footer" style={{backgroundColor: 'white'}}>
                         <div class="container text-center">
 
@@ -247,9 +234,7 @@ function Gallery () {
 
                         </div>
                     </footer>
-                )
             }
-            </Media>
         </Layout>
     )
 }

@@ -1,11 +1,22 @@
 import Media from 'react-media';
+import { useMediaQuery } from 'react-responsive'
 
 export default function Header(){
 
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-device-width: 1224px)'
+      })
+      const isBigScreen = useMediaQuery({ query: '(min-device-width: 1824px)' })
+      const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+      const isTabletOrMobileDevice = useMediaQuery({
+          query: '(max-device-width: 1224px)'
+      })
+      const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+      const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
+
     return(
-        <Media query="(min-width: 1024px)">
-          {matches =>
-            matches ? (
+        <>
+        {isDesktopOrLaptop &&
                 <header class="header h-fullscreen overflow-hidden bg-size-contain bg-img-right" style={{paddingBottom: '0px', paddingTop: '58px'}}>
                     <div class="container-fluid">
                     <div class="row h-100" style={{padding: '0px'}}>
@@ -31,7 +42,9 @@ export default function Header(){
                     </div>
                     </div>
                 </header>
-            ) : (
+         } 
+         
+         {isTabletOrMobile &&
                 <header class="header h-fullscreen overflow-hidden bg-size-contain bg-img-right" style={{paddingBottom: '0px', paddingTop: '58px'}}>
                     <div class="container-fluid">
                     <div class="row h-100" style={{padding: '0px'}}>
@@ -52,14 +65,13 @@ export default function Header(){
                                     <a href="/work" className="mobile-overlay"><h2 className="title home-title">Work <hr className="dash" /></h2><p className="subtext">Join The Azmera Team!</p></a>
                                 </div>
                                 <div className="col-12" style={{height: '40vh',  margin: '0px', padding: '0px', background: 'url(/assets/img/home05.png) no-repeat', backgroundSize: 'cover'}}>
-                                    <a href="/work" className="mobile-overlay"><h2 className="title home-title">Contact <hr className="dash" /></h2><p className="subtext">Get In Touch!</p></a>
+                                    <a href="/contact" className="mobile-overlay"><h2 className="title home-title">Contact <hr className="dash" /></h2><p className="subtext">Get In Touch!</p></a>
                                 </div>
                         </div>
                     </div>
                     </div>
                 </header>
-            )
-          }
-        </Media>
+        }
+        </>
     )
 }

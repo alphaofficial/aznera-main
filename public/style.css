@@ -247,4 +247,7 @@ hr.dash {
   p {
     font-size: 12px!important;
   }
+  .mobile-nav {
+    padding: 0px!important
+  }
 }

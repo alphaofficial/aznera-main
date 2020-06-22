@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import Reservations from './reservation'
 import { navigate } from '../utils/functions';
 import Media from 'react-media';
+import { useMediaQuery } from 'react-responsive'
 
 export default function Navbar(){
 
@@ -24,6 +25,18 @@ export default function Navbar(){
     }
   };
 
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-device-width: 1224px)'
+  })
+  const isBigScreen = useMediaQuery({ query: '(min-device-width: 1824px)' })
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const isTabletOrMobileDevice = useMediaQuery({
+      query: '(max-device-width: 1224px)'
+  })
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
+
   const [modalIsOpen,setIsOpen] = React.useState(false);
   function openModal() {
     setIsOpen(true);
@@ -43,9 +56,8 @@ export default function Navbar(){
   }
 
     return (
-        <Media query="(min-width: 1024px)">
-          {matches =>
-            matches ? (
+      <>
+        {isDesktopOrLaptop &&
               <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: 'white', top: '0px', padding: '1em 0'}}>
                 <div className="container-fluid">
                   <div className="navbar-left mr-4">
@@ -74,16 +86,18 @@ export default function Navbar(){
                       <Reservations callback={closeModal}/>
                 </Modal>
             </nav>
-            ) : (
-              <nav className="navbar navbar-raw navbar-expand-lg navbar-dark navbar-stick-dark" style={{padding: '0px', textAlign: 'right', marginTop: '0', position: 'fixed', top: 0, background: 'white'}}  data-navbar="fixed" >
+         } 
+
+         {isTabletOrMobile &&
+              <nav className="mobile-nav navbar navbar-raw navbar-expand-lg navbar-dark navbar-stick-dark" style={{padding: '0px', textAlign: 'right', marginTop: '0', position: 'fixed', top: 0, background: 'white'}}  data-navbar="fixed" >
                   <div className="container">
-                    
-                    <a className="" href="/">
-                      <img className="logo-dark" style={{width: '5em', marginLeft: '.5em'}} src="/assets/img/logo-regular.png" alt="logo"/>
-                    </a>
-                    
+                    <div className="navbar-left">
+                      <a className="" href="/">
+                        <img className="logo-dark" style={{width: '5em', marginLeft: '.5em'}} src="/assets/img/logo-regular.png" alt="logo"/>
+                      </a>
+                    </div>
                     <div className="ml-auto" style={{float: 'right', textAlign: 'right'}}>
-                      <img src="/assets/img/shop.png" alt="..." style={{width: '15%'}} />
+                      <img onClick={()=>{navigate("shop")}} src="/assets/img/shop.png" alt="..." style={{width: '15%'}} />
                         <button className="btn btn-xs btn-secondary" onClick={toggleNav} style={{backgroundColor:'transparent', border: 'none', fontSize: '25px', color: 'black'}}>{toggle ? <i className="fa fa-close"></i> : <i className="fa fa-bars"></i>}</button>                  
                     </div>
                   </div>
@@ -100,22 +114,22 @@ export default function Navbar(){
                           <a className="mobile-menu-link" href="/work">Work With Us</a>
                           <a className="mobile-menu-link" style={{borderBottomRightRadius: '35px'}}  href="/contact">Contact</a>
                         </nav>
-                        <button style={{backgroundColor: '#ffffff', borderColor: '#FF6B05', color: '#FF6B05', borderRadius: '20px', padding: '.5em 2em'}} className="btn btn-sm btn-success menu-btn" onClick={()=>{setIsOpen(true)}}>Reservations</button>
+                        <button style={{backgroundColor: '#ffffff', borderColor: '#FF6B05', color: '#FF6B05', borderRadius: '20px', padding: '.5em 2em'}} className="btn btn-sm btn-success menu-btn" onClick={()=>{navigate("reservations")}}>Reservations</button>
                       </div>
-                      <Modal 
-                        isOpen={modalIsOpen}
-                        onAfterOpen={afterOpenModal}
-                        onRequestClose={closeModal}
-                        style={customStyles}
-                        contentLabel="Example Modal">
-                            <Reservations callback={closeModal}/>
-                      </Modal>
                     </div>
+
+                    <Modal 
+                    isOpen={modalIsOpen}
+                    onAfterOpen={afterOpenModal}
+                    onRequestClose={closeModal}
+                    style={customStyles}
+                    contentLabel="Example Modal">
+                        <Reservations callback={closeModal}/>
+                  </Modal>     
                   </div>
 
               </nav>
-            )
-          }
-        </Media>
+         }
+         </>
     )
 }
