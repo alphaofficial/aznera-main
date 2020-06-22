@@ -1,22 +1,25 @@
 import Iframe from 'react-iframe'
 import {navigate} from '../utils/functions'
+import HeadFile from '../components/HeadFile'
 
 
 export default function Shop(){
     return(
-        <><style global jsx>{`
+        <><HeadFile />
+        <style global jsx>{`
                 .homebtn {
                     z-index: 999;
                     position: fixed;
-                    bottom: 10px;
-                    left: 0;
+                    bottom: -1px;
+                    left: -1;
+                    right: 0;
                     background: #FF6B05;
                     border-color: #FF6B05;
                     color: white;
-                    padding: .5em;
-                    border-radius: 3px;
+                    padding: 1em;
                     margin: .2em;
                     box-shadow: none;
+                    width: 100%
                 }
                 body{
                     overflow: hidden;
@@ -35,7 +38,7 @@ export default function Shop(){
                     allowFullScreen={true}
                     className="frame"
                 />
-                <button onClick={()=>{navigate()}} className="btn btn-primary homebtn"><span><i className="fa fa-caret-left"></i>{"< Go to home"}</span></button>
+                <button onClick={()=>{navigate()}} className="btn btn-primary homebtn"><span><i className="fa fa-caret-left"></i>{"Go To Home"}</span></button>
         </>
     )
 }
