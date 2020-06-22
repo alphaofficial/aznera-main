@@ -5,8 +5,22 @@ import Footer from '../components/footer'
 import { useEffect } from 'react';
 import Layout from '../components/layout';
 import Media from 'react-media';
+import { useMediaQuery } from 'react-responsive'
+
 
 function Menu () {
+
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-device-width: 1224px)'
+      })
+    const isBigScreen = useMediaQuery({ query: '(min-device-width: 1824px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+    const isTabletOrMobileDevice = useMediaQuery({
+        query: '(max-device-width: 1224px)'
+    })
+    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+    const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
+
 
     return (
         <Layout page="menu">
@@ -269,7 +283,8 @@ function Menu () {
                         </div>
 
                         <div className="col-md-3">
-                            <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Stews</p>
+                            {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Stews</h4>}
+                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Stews</p>}
                             <p><span style={{color: '#FF6B05'}}>Abobi Tadzi</span><br/> <span>(Dry Anchovies (Keta School Boys)</span></p>
                             <p><span style={{color: '#FF6B05'}}>Asanka Garden Eggs</span> <br /> <span>(Eggs, Avocado, Sardines or Koobi)</span></p>
                             <p><span style={{color: '#FF6B05'}}>Asanka Hot Pepper</span> <br /><span>(Eggs, Sardines or Koobi or Corned Beef or United NationsFish With Avocado)</span></p>
@@ -279,10 +294,11 @@ function Menu () {
 
 
                         <div className="col-md-5">
-                            <p style={{color: '#FF6B05', fontSize: '40px'}}>Soups</p>
+                        {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Soups</h4>}
+                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Soups</p>}
                             <p style={{color: '#FF6B05', fontSize: '14px', textDecoration: 'underline'}}>Soups are served with a side of choice</p>
                             <div className="row">
-                                <div className="col-md-6">      
+                                <div className="col-6 col-md-6">      
                                     <p><span style={{color: '#FF6B05'}}>Ademe Soup</span><br/> <span>(Dryfish, Crab, Beef)</span></p>
                                     <p><span style={{color: '#FF6B05'}}>Groundnut Soup</span> <br /> <span>(Chicken or Beef)</span></p>
                                     <p><span style={{color: '#FF6B05'}}>Palm Nut Soup</span> <br /><span>(Beef and Dry Fish)</span></p>
@@ -292,7 +308,7 @@ function Menu () {
                                     <p><span style={{color: '#FF6B05'}}>Goat Light Soup</span></p>
                                 </div>
 
-                                <div className="col-md-6">         
+                                <div className="col-6 col-md-6">         
                                     <p><span style={{color: '#FF6B05'}}>Dry Fish Light Soup</span></p>
                                     <p><span style={{color: '#FF6B05'}}>Grasscutter Light Soup</span></p>
                                     <p><span style={{color: '#FF6B05'}}>Azmera Light Soup</span> <br /> <span>(Dryfish, Crab, Salted Beef, Mushroom,Dry Snails, sliced okro, sliced garden eggs)</span></p>
@@ -305,9 +321,10 @@ function Menu () {
                         </div>
 
                         <div className="col-md-4">
-                            <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Sides</p>
+                            {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Sides</h4>}
+                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Sides</p>}
                             <div className="row">
-                                <div className="col-md-6">       
+                                <div className="col-6 col-md-6 col-sm-6 col-xs-6">       
                                    <p>Plain Rice</p>
                                    <p>Jollof Rice</p>
                                    <p>Kokonte</p>
@@ -325,7 +342,7 @@ function Menu () {
                                    <p> Kaaklo </p>
                                 </div>
 
-                                <div className="col-md-6">        
+                                <div className="col-6 col-md-6 col-sm-6 col-xs-6">        
                                    <p>Fufu <br /> <span style={{fontSize: '12px'}}>(Plantain or Cocoyam)</span></p>
                                    <p>Fried Yam</p>
                                    <p>Fried Sweet Potato</p>
@@ -340,7 +357,8 @@ function Menu () {
 
                         </div>
                         <div className="col-md-3">
-                            <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Khebabs</p>
+                            {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Khebabs</h4>}
+                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Khebabs</p>}
                             <p>Beef </p>
                             <p>Goat</p>
                             <p>Gizzard</p>
@@ -349,7 +367,8 @@ function Menu () {
                         </div>
 
                         <div className="col-md-3">
-                            <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Desert</p>
+                        {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Desert</h4>}
+                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Desert</p>}
                             <p>Nkate Cake </p>
                             <p>Fresh Fruit</p>
                             <p>Atadwe Milk (Tiger Nut Pudding)</p>
@@ -358,7 +377,8 @@ function Menu () {
 
 
                         <div className="col-md-3">      
-                            <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Grills</p>
+                            {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Grills</h4>}
+                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Grills</p>}
                             <p>Tilapia </p>
                             <p>Chicken</p>
                             <p>Guinea Fowl</p>
@@ -371,7 +391,8 @@ function Menu () {
                         </div>
 
                         <div className="col-md-3">
-                            <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Local Drinks</p>
+                        {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Local Drinks</h4>}
+                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Local Drinks</p>}
                             <p>Palm Wine </p>
                             <p> Asaana</p>
                             <p> Lamugin</p>
