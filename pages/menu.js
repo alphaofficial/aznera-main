@@ -5,7 +5,7 @@ import Footer from '../components/footer'
 import { useEffect } from 'react';
 import Layout from '../components/layout';
 import Media from 'react-media';
-import { useMediaQuery } from 'react-responsive'
+import MediaQuery, { useMediaQuery } from 'react-responsive'
 
 
 function Menu () {
@@ -283,8 +283,12 @@ function Menu () {
                         </div>
 
                         <div className="col-md-3">
+                            <MediaQuery minDeviceWidth={1024}>
+                                <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Stews</p>
+                            </MediaQuery>               
+
                             {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Stews</h4>}
-                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Stews</p>}
+                            
                             <p><span style={{color: '#FF6B05'}}>Abobi Tadzi</span><br/> <span>(Dry Anchovies (Keta School Boys)</span></p>
                             <p><span style={{color: '#FF6B05'}}>Asanka Garden Eggs</span> <br /> <span>(Eggs, Avocado, Sardines or Koobi)</span></p>
                             <p><span style={{color: '#FF6B05'}}>Asanka Hot Pepper</span> <br /><span>(Eggs, Sardines or Koobi or Corned Beef or United NationsFish With Avocado)</span></p>
@@ -294,9 +298,12 @@ function Menu () {
 
 
                         <div className="col-md-5">
-                        {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Soups</h4>}
-                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Soups</p>}
-                            <p style={{color: '#FF6B05', fontSize: '14px', textDecoration: 'underline'}}>Soups are served with a side of choice</p>
+                            {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Soups</h4>}
+                            <MediaQuery minDeviceWidth={1024}>
+                                <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Soups</p>
+                            </MediaQuery> 
+
+                            <p style={{color: '#FF6B05', textDecoration: 'underline'}}>Soups are served with a side of choice</p>
                             <div className="row">
                                 <div className="col-6 col-md-6">      
                                     <p><span style={{color: '#FF6B05'}}>Ademe Soup</span><br/> <span>(Dryfish, Crab, Beef)</span></p>
@@ -322,7 +329,9 @@ function Menu () {
 
                         <div className="col-md-4">
                             {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Sides</h4>}
-                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Sides</p>}
+                            <MediaQuery minDeviceWidth={1024}>
+                                <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Sides</p>
+                            </MediaQuery> 
                             <div className="row">
                                 <div className="col-6 col-md-6 col-sm-6 col-xs-6">       
                                    <p>Plain Rice</p>
@@ -358,7 +367,9 @@ function Menu () {
                         </div>
                         <div className="col-md-3">
                             {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Khebabs</h4>}
-                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Khebabs</p>}
+                            <MediaQuery minDeviceWidth={1024}>
+                                <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Khebabs</p>
+                            </MediaQuery> 
                             <p>Beef </p>
                             <p>Goat</p>
                             <p>Gizzard</p>
@@ -368,7 +379,9 @@ function Menu () {
 
                         <div className="col-md-3">
                         {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Desert</h4>}
-                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Desert</p>}
+                        <MediaQuery minDeviceWidth={1024}>
+                                <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Desert</p>
+                            </MediaQuery> 
                             <p>Nkate Cake </p>
                             <p>Fresh Fruit</p>
                             <p>Atadwe Milk (Tiger Nut Pudding)</p>
@@ -378,7 +391,9 @@ function Menu () {
 
                         <div className="col-md-3">      
                             {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Grills</h4>}
-                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Grills</p>}
+                            <MediaQuery minDeviceWidth={1024}>
+                                <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Grills</p>
+                            </MediaQuery>
                             <p>Tilapia </p>
                             <p>Chicken</p>
                             <p>Guinea Fowl</p>
@@ -392,7 +407,9 @@ function Menu () {
 
                         <div className="col-md-3">
                         {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Local Drinks</h4>}
-                            {isDesktopOrLaptop && <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Local Drinks</p>}
+                        <MediaQuery minDeviceWidth={1024}>
+                                <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Local Drinks</p>
+                            </MediaQuery> 
                             <p>Palm Wine </p>
                             <p> Asaana</p>
                             <p> Lamugin</p>
