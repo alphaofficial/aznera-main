@@ -4,6 +4,7 @@ import Reservations from './reservation'
 import { navigate } from '../utils/functions';
 import Media from 'react-media';
 import { useMediaQuery } from 'react-responsive'
+import Link from 'next/link'
 
 export default function Navbar(){
 
@@ -61,10 +62,11 @@ export default function Navbar(){
               <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: 'white', top: '0px', padding: '1em 0'}}>
                 <div className="container-fluid">
                   <div className="navbar-left mr-4">
-                    <a className="navbar-brand" href="/">
+                    <Link href="/"><a className="navbar-brand">
                       <img className="logo-dark" src="/assets/img/logo-regular.png" alt="logo"/>
                       <img className="logo-light" src="/assets/img/logo-white.png" alt="logo"/>
                     </a>
+                    </Link>
                   </div>
 
                   <section className="navbar-mobile" style={{float: "right"}}>
@@ -72,7 +74,7 @@ export default function Navbar(){
 
                     <div className="ml-auto">
                     <button style={{backgroundColor: '#ffffff', borderColor: '#FF6B05', color: '#FF6B05', borderRadius: '20px', padding: '.5em 2em'}} className="btn btn-sm btn-success menu-btn" onClick={()=>{setIsOpen(true)}}>Reservations</button>
-                    <span style={{cursor: 'pointer'}} onClick={()=>{navigate("shop")}}><img src="/assets/img/shop.png" alt="..." style={{width: '10%', marginLeft: '2em'}} /></span>
+                    <Link href="/shop"><a style={{cursor: 'pointer'}}><img src="/assets/img/shop.png" alt="..." style={{width: '10%', marginLeft: '2em'}} /></a></Link>
                     </div>
                     
                   </section>
@@ -92,12 +94,12 @@ export default function Navbar(){
               <nav className="mobile-nav navbar navbar-raw navbar-expand-lg navbar-dark navbar-stick-dark" style={{padding: '0px', textAlign: 'right', marginTop: '0', position: 'fixed', top: 0, background: 'white'}}  data-navbar="fixed" >
                   <div className="container">
                     <div className="navbar-left">
-                      <a className="" href="/">
+                      <Link href="/"><a className="">
                         <img className="logo-dark" style={{width: '5em', marginLeft: '.5em'}} src="/assets/img/logo-regular.png" alt="logo"/>
-                      </a>
+                      </a></Link>
                     </div>
                     <div className="ml-auto" style={{float: 'right', textAlign: 'right'}}>
-                      <img onClick={()=>{navigate("shop")}} src="/assets/img/shop.png" alt="..." style={{width: '15%'}} />
+                        <Link href="/shop"><a><img src="/assets/img/shop.png" alt="..." style={{width: '15%'}} /></a></Link>
                         <button className="btn btn-xs btn-secondary" onClick={toggleNav} style={{backgroundColor:'transparent', border: 'none', fontSize: '25px', color: 'black'}}>{toggle ? <i className="fa fa-close"></i> : <i className="fa fa-bars"></i>}</button>                  
                     </div>
                   </div>
@@ -107,12 +109,12 @@ export default function Navbar(){
                     <div className="row align-items-center text-center">
                       <div className="col">
                         <nav className="nav nav-bold nav-lead flex-column my-7">
-                          <a className="mobile-menu-link" style={{borderTopLeftRadius: '35px'}}  href="/">Home</a>
-                          <a className="mobile-menu-link" href="/discover">Discover Azmera</a>
-                          <a className="mobile-menu-link" href="/menu">Menu</a>
-                          <a className="mobile-menu-link" href="/gallery">Gallery</a>
-                          <a className="mobile-menu-link" href="/work">Work With Us</a>
-                          <a className="mobile-menu-link" style={{borderBottomRightRadius: '35px'}}  href="/contact">Contact</a>
+                          <Link href="/"><a className="mobile-menu-link" style={{borderTopLeftRadius: '35px'}}>Home</a></Link>
+                          <Link href="/discover"><a className="mobile-menu-link">Discover Azmera</a></Link>
+                          <Link href="/menu"><a className="mobile-menu-link">Menu</a></Link>
+                          <Link href="/gallery"><a className="mobile-menu-link">Gallery</a></Link>
+                          <Link href="/work"><a className="mobile-menu-link">Work With Us</a></Link>
+                          <Link href="/contact"><a className="mobile-menu-link" style={{borderBottomRightRadius: '35px'}} >Contact</a></Link>
                         </nav>
                         <button style={{backgroundColor: '#ffffff', borderColor: '#FF6B05', color: '#FF6B05', borderRadius: '20px', padding: '.5em 2em'}} className="btn btn-sm btn-success menu-btn" onClick={()=>{navigate("reservations")}}>Reservations</button>
                       </div>
