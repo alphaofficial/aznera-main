@@ -12,7 +12,7 @@ function Menu () {
         <Layout page="menu">
             <section class="section" style={{backgroundColor: 'white'}}>
                 <div class="container">
-                    <div className="row" style={{marginTop: '5em'}}>
+                    <div className="row" style={{marginTop: '2em'}}>
                         <div className="col-md-12 text-center" style={{ marginBottom: '2em', marginTop: '2em'}}>
                             <h1 class="fw-500">Menu</h1>
                             <div style={{width: '100%'}}>

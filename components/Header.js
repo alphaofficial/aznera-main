@@ -53,7 +53,7 @@ export default function Header(){
                                 <a href="/discover" className="mobile-overlay"><h2 className="title home-title">Discover Azmera  <hr className="dash" /></h2><p className="subtext">Experiences Of A Rich Ghanaian Culture</p></a>
                             </div>
                             <div class="col-12" style={{height: '50vh',  margin: '0px', padding: '0px', background: 'url(/assets/img/home04.png) no-repeat', backgroundSize: 'cover'}}>
-                                <a href="/discover" className="mobile-overlay"><h2 className="title home-title">Menu <hr className="dash" /></h2><p className="subtext">Experiences Of A Rich Ghanaian Culture</p></a>
+                                <a href="/menu" className="mobile-overlay"><h2 className="title home-title">Menu <hr className="dash" /></h2><p className="subtext">Experience Our Palatable Culture</p></a>
                             </div>
                         </div>
                         
