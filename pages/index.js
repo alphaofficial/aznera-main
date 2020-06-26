@@ -36,7 +36,7 @@ function HomePage () {
             <HeadFile />
             <Navbar />
             <Header />
-            <div className="bg-dark col-12 mx-auto py-4" style={{position: 'fixed', top: 0, left: 0, zIndex: '9999', fontFamily: 'Quicksand', color: '#ffffff', display: popup ? 'block' : 'none'}} data-animation="slide-up">
+            <div className="bg-dark col-12 mx-auto py-4" style={{position: 'fixed', top: 0, left: 0, zIndex: '9999', fontFamily: 'Quicksand', color: '#ffffff', display: popup ? 'block' : 'none', opacity: '.9'}} data-animation="slide-up">
                 <div className="row gap-y align-items-center">
                     <div className="col-md-12">
                         <strong>A MESSAGE TO OUR CUSTOMERS</strong>

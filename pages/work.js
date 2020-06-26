@@ -57,16 +57,9 @@ function Work () {
                             <div className="col-md-8 mx-auto">
                                 <div class="form-group">
                                     <select name="position" class="custom-form-control" id="name" style={{width: '100%', background: 'transparent', border: '2px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em', borderRadius: '10px', padding: '.5em 1em'}}>
-                                        <option>Position</option>
+                                        <option>Positions</option>
                                         <option value="Cook">Cook</option>
                                         <option value="Cleaner">Cleaner</option>
-                                        <option value="Buffet Attendant">Buffet Attendant</option>
-                                        <option value="Delivery Rider">Delivery Rider</option>
-                                        <option value="Waiter/ Waitress">Waiter/ Waitress</option>
-                                        <option value="Host/ Hostress">Host/ Hostess</option>
-                                        <option value="Kitchen Assistant">Kitchen Assistant</option>
-                                        <option value="Cashier">Cashier</option>
-                                        <option value="Front Desk Executives">Front Desk Executive</option>
                                     </select>
                                 </div>
                             </div>
@@ -79,7 +72,7 @@ function Work () {
                                     <input type="file" name="attachment" id="file" placeholder="Choose file" class="custom-form-control" style={{width: '100%', background: 'transparent', display: 'none'}}/>
                                 </div>
                                 <div style={{textAlign: 'center'}}>
-                                    <button type="submit" class="btn btn-sm btn-primary" style={{width: '50%', background: '#FF6B05 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#FF6B05', borderRadius: '39px', opacity: '1', color: 'white'}}>click here to apply</button>
+                                    <button type="submit" class="btn btn-sm btn-primary" style={{width: '50%', background: '#4C1A16 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#4C1A16', borderRadius: '39px', opacity: '1', color: 'white'}}>click here to apply</button>
                                 </div>
                                 
                                

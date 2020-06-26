@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import Layout from '../components/layout';
 import Media from 'react-media';
 import MediaQuery, { useMediaQuery } from 'react-responsive'
+import {navigate} from '../utils/functions'
 
 
 function Menu () {
@@ -152,6 +153,12 @@ function Menu () {
                             </div>
                             <p style={{color: '#FF6B05', textAlign: 'center', fontSize: '20px', marginTop: '1em'}}>Azmera Fried Yam Sweet Potato</p>
                             <p style={{color: '#4C1A16', textAlign:'center', fontSize: '12px', }}>(Fried Yam/Sweet Potatoes, served with sardines, fried fish, grilled tilapia or grilled chicken with red pepper, green pepper and shito)</p>
+                        </div>
+                    </div>
+
+                    <div className="row" style={{marginTop: '3em'}}>
+                        <div className="col-md-4 mx-auto text-center">
+                            <button onClick={()=>{navigate("shop")}} type="button" class="btn btn-sm btn-primary" style={{width: '100%', background: '#4C1A16 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#4C1A16', borderRadius: '39px', opacity: '1', color: 'white'}}>Proceed To Online Shop</button>
                         </div>
                     </div>
 

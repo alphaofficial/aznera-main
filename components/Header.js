@@ -22,7 +22,7 @@ export default function Header(){
                     <div class="container-fluid">
                     <div class="row h-100" style={{padding: '0px'}}>
                         <div class="col-md-3 col-sm-12" style={{height: '100vh',  margin: '0px', padding: '0px', background: 'url(/assets/img/home01.png) no-repeat', backgroundSize: 'cover'}}>
-                            <Link href="/discover"><a className="overlay"><h2 className="title home-title">Discover Azmera  <hr className="dash" /></h2><p className="subtext">Experiences Of A Rich Ghanaian Culture</p></a></Link>
+                            <Link href="/discover"><a className="overlay"><h2 className="title home-title">Discover Azmera  <hr className="dash" /></h2><p className="subtext">An Authentic Taste Of Ghanaian Culture</p></a></Link>
                         </div>
                         <div class="col-md-2 col-sm-12">
                             <div class="row">
@@ -51,7 +51,7 @@ export default function Header(){
                     <div class="row h-100" style={{padding: '0px'}}>
                         <div class="col-7" style={{padding: '0px'}}>
                             <div class="col-12" style={{height: '50vh',  margin: '0px', padding: '0px', background: 'url(/assets/img/home01.png) no-repeat', backgroundSize: 'cover'}}>
-                            <Link href="/discover"><a className="mobile-overlay"><h2 className="title home-title">Discover Azmera  <hr className="dash" /></h2><p className="subtext">Experiences Of A Rich Ghanaian Culture</p></a></Link>
+                            <Link href="/discover"><a className="mobile-overlay"><h2 className="title home-title">Discover Azmera  <hr className="dash" /></h2><p className="subtext">An Authentic Taste Of Ghanaian Culture</p></a></Link>
                             </div>
                             <div class="col-12" style={{height: '50vh',  margin: '0px', padding: '0px', background: 'url(/assets/img/home04.png) no-repeat', backgroundSize: 'cover'}}>
                                 <Link href="/menu"><a className="mobile-overlay"><h2 className="title home-title">Menu <hr className="dash" /></h2><p className="subtext">Experience Our Palatable Culture</p></a></Link>

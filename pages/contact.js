@@ -34,6 +34,7 @@ function Contact () {
                                                 <p>+233 302 77 06 06</p>
                                                 <p>+233 268 02 99 68</p>
                                                 <p>+233 558 70 85 94</p>
+                                                <p>reservations@azmerarestaurant.com</p>
                                                 <div style={{display: 'flex', marginTop: '2em'}}>
                                                     <a class="" style={{marginRight: '2em'}} href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook_white.svg" alt="FB"/></a>
                                                     <a class=""  style={{marginRight: '2em'}} href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter_white.svg" alt="TW"/></a>

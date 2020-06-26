@@ -74,7 +74,7 @@ export default function Navbar(){
 
                     <div className="ml-auto">
                     <button style={{backgroundColor: '#ffffff', borderColor: '#FF6B05', color: '#FF6B05', borderRadius: '20px', padding: '.5em 2em'}} className="btn btn-sm btn-success menu-btn" onClick={()=>{setIsOpen(true)}}>Reservations</button>
-                    <Link href="/shop"><a style={{cursor: 'pointer'}}><img src="/assets/img/shop.png" alt="..." style={{width: '10%', marginLeft: '2em'}} /></a></Link>
+                    <Link href="/shop"><a style={{backgroundColor: '#FF6B05', borderColor: '#FF6B05', color: '#FFFFFF', borderRadius: '20px', padding: '.5em 2em', cursor: 'pointer', marginLeft: '1em'}} className="btn btn-sm btn-success menu-btn">Shop <i className="fa fa-arrow-right"></i></a></Link>
                     </div>
                     
                   </section>
@@ -99,7 +99,7 @@ export default function Navbar(){
                       </a></Link>
                     </div>
                     <div className="ml-auto" style={{float: 'right', textAlign: 'right'}}>
-                        <Link href="/shop"><a><img src="/assets/img/shop.png" alt="..." style={{width: '15%'}} /></a></Link>
+                        <Link href="/shop"><a style={{backgroundColor: '#FF6B05', borderColor: '#FF6B05', color: '#FFFFFF', borderRadius: '20px', padding: '.5em 2em', cursor: 'pointer', marginRight: '1em'}} className="btn btn-sm btn-success menu-btn">Shop <i className="fa fa-arrow-right"></i></a></Link>
                         <button className="btn btn-xs btn-secondary" onClick={toggleNav} style={{backgroundColor:'transparent', border: 'none', fontSize: '25px', color: 'black'}}>{toggle ? <i className="fa fa-close"></i> : <i className="fa fa-bars"></i>}</button>                  
                     </div>
                   </div>
