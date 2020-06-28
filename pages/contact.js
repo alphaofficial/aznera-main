@@ -132,9 +132,33 @@ function Contact () {
                                                             <textarea placeholder="Comments" name="message" class="custom-form-control-textarea" id="message" rows="3" style={{width: '100%', background: 'transparent', border: '2px solid #1C1C1C', color: '#1C1C1C', padding: '.2em .5em', borderRadius: '7px'}}></textarea>
                                                         </div>
                                                     </div>
-                                                    <div className="col-md-6">
+                                                    <div className="col-12">
                                                         <div class="form-group" style={{textAlign: 'center'}}>
                                                             <button type="submit" class="btn btn-sm btn-primary" style={{width: '50%', background: '#FF6B05 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#FF6B05', borderRadius: '39px', opacity: '1', color: 'white'}}>Send</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="col-12" style={{marginTop: '3em'}}>
+                                                        <div class="form-group" style={{textAlign: 'center'}}>
+                                                            <button type="submit" class="btn btn-sm btn-primary" style={{background: '#FF6B05 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#FF6B05', borderRadius: '30px', opacity: '1', color: 'white', fontSize: '15px',}}><i className="fa fa-map-marker"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-12">
+                                                        <div class="form-group" style={{textAlign: 'center'}}>
+                                                            <p style={{fontWeight: 'bold'}}>No 9 Arku Korsa Rd</p>
+                                                            <p style={{fontWeight: 'bold'}}>Roman Ridge, Accra.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-12" style={{marginTop: '1em'}}> 
+                                                        <div class="form-group" style={{textAlign: 'center'}}>
+                                                            <button type="submit" class="btn btn-sm btn-primary" style={{background: '#FF6B05 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#FF6B05', borderRadius: '30px', opacity: '1', color: 'white', fontSize: '15px',}}><i className="fa fa-phone"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-12">
+                                                        <div class="form-group" style={{textAlign: 'center'}}>
+                                                            <p style={{fontWeight: 'bold'}}>+233 302 77 06 06</p>
+                                                            <p style={{fontWeight: 'bold'}}>+233 268 02 99 68 </p>
+                                                            <p style={{fontWeight: 'bold'}}>+233 558 70 85 94</p>
                                                         </div>
                                                     </div>
                                                 </div>
