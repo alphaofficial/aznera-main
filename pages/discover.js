@@ -47,7 +47,7 @@ function Discover () {
                     </div>
 
                     <div class="col-md-4 col-sm-12 mx-auto">
-                        <video id="vid" width="100%" style={{width: '100%'}} height="300" poster="/assets/img/video-overlay.jpeg" controls style={{borderRadius: '20px'}}>
+                        <video id="vid" width="100%" style={{width: '100%'}} height="300" poster="/assets/img/video-overlay.png" controls style={{borderRadius: '20px'}}>
                             <source src="/assets/video/discover.mp4" type="video/mp4"/>
                             <source src="/assets/video/discover.ogg" type="video/ogg"/>
                         </video>
