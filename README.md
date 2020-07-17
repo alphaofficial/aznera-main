@@ -1,2 +1,2 @@
-# next-boilerplate
-Next js boilerplate
+# Azmera Restaurant
+http://azmerarestaurant.com
