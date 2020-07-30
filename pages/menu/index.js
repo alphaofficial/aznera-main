@@ -13,14 +13,11 @@ function Menu () {
 
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-device-width: 1224px)'
-      })
-    const isBigScreen = useMediaQuery({ query: '(min-device-width: 1824px)' })
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-    const isTabletOrMobileDevice = useMediaQuery({
-        query: '(max-device-width: 1224px)'
     })
-    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
-    const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+
+
+    
 
 
     return (
@@ -172,8 +169,124 @@ function Menu () {
 
                         <div className="col-md-12" style={{marginBottom: '5em'}}>
                             <div className="row">
-                                <div className="col-md-12 mx-auto">
-                                    <table className="table-responsive" style={{border: 'none', margin: '0 auto'}}>
+                                <div className="col-md-8 col-sm-12 mx-auto">
+                                    {isDesktopOrLaptop &&
+                                        <table className="table" style={{border: 'none', margin: '0 auto'}}>
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th><div style={{border: '2px solid #FF6B05', borderRadius: '22px', textAlign:'center', fontSize: '14px', padding: '.5em', margin: '.5em 1em'}}>50 to 99<br/> people</div></th>
+                                                    
+                                                    <th><div style={{border: '2px solid #FF6B05', borderRadius: '22px', textAlign:'center', fontSize: '14px', padding: '.5em', margin: '.5em 1em'}}>100 to 199<br/> people</div></th>
+                                                    
+                                                    <th><div style={{border: '2px solid #FF6B05', borderRadius: '22px', textAlign:'center', fontSize: '14px', padding: '.5em', margin: '.5em 1em'}}>200 to 299<br/> people</div></th>
+
+                                                    <th><div style={{border: '2px solid #FF6B05', borderRadius: '22px', textAlign:'center', fontSize: '14px', padding: '.5em', margin: '.5em 1em'}}>300 plus<br/> people</div></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr style={{margin: '2em 0'}}>
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}><div style={{background: '#FF6B05 0% 0% no-repeat padding-box', borderRadius: '50%', padding: '1em', color: 'white', fontFamily: 'Belligan', width: '100px', height: '100px', textAlign: 'center'}}>Package One</div></td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC70</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC65</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC60</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC55</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr style={{margin: '2em 0'}}>
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}><div style={{background: '#FF6B05 0% 0% no-repeat padding-box', borderRadius: '50%', padding: '1em', color: 'white', fontFamily: 'Belligan', width: '100px', height: '100px', textAlign: 'center'}}>Package Two</div></td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC110</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC105</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC100</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC135</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr style={{margin: '2em 0'}}>
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}><div style={{background: '#FF6B05 0% 0% no-repeat padding-box', borderRadius: '50%', padding: '1em', color: 'white', fontFamily: 'Belligan', width: '100px', height: '100px', textAlign: 'center'}}>Package Three</div></td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC140</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC135</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC130</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC125</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr style={{margin: '2em 0'}}>
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}><div style={{background: '#FF6B05 0% 0% no-repeat padding-box', borderRadius: '50%', padding: '1em', color: 'white', fontFamily: 'Belligan', width: '100px', height: '100px', textAlign: 'center'}}>Package Three</div></td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC160</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC155</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC150</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+
+                                                    <td style={{textAlign: 'center', margin: '0 auto'}}>
+                                                        <p style={{fontSize: '20px', marginBottom: '0'}}>GHC145</p>
+                                                        <p style={{marginTop: '0'}}>per head</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    }
+
+                                    {isTabletOrMobile &&
+                                        <table className="table-responsive" style={{border: 'none', margin: '0 auto'}}>
                                         <thead>
                                             <tr>
                                                 <th></th>
@@ -285,16 +398,22 @@ function Menu () {
                                             </tr>
                                         </tbody>
                                     </table>
+
+                                    }
+                                    
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-md-3">
-                            <MediaQuery minDeviceWidth={1024}>
-                                <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Stews</p>
-                            </MediaQuery>               
+                            {isTabletOrMobile && 
+                                <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Stews</h4>
+                            }
 
-                            {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Stews</h4>}
+                            {isDesktopOrLaptop &&
+                                 <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Stews</p>
+                            }             
+
                             
                             <p><span style={{color: '#FF6B05'}}>Abobi Tadzi</span><br/> <span>(Dry Anchovies (Keta School Boys)</span></p>
                             <p><span style={{color: '#FF6B05'}}>Asanka Garden Eggs</span> <br /> <span>(Eggs, Avocado, Sardines or Koobi)</span></p>
@@ -306,10 +425,11 @@ function Menu () {
 
                         <div className="col-md-5">
                             {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Soups</h4>}
-                            <MediaQuery minDeviceWidth={1024}>
-                                <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Soups</p>
-                            </MediaQuery> 
 
+                            {isDesktopOrLaptop &&
+                                <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Soups</p>
+                            }
+                          
                             <p style={{color: '#FF6B05', textDecoration: 'underline'}}>Soups are served with a side of choice</p>
                             <div className="row">
                                 <div className="col-6 col-md-6">      
@@ -336,9 +456,12 @@ function Menu () {
 
                         <div className="col-md-4">
                             {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Sides</h4>}
-                            <MediaQuery minDeviceWidth={1024}>
+                            
+                            {isDesktopOrLaptop &&
                                 <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Sides</p>
-                            </MediaQuery> 
+                            }
+                                
+                            
                             <div className="row">
                                 <div className="col-6 col-md-6 col-sm-6 col-xs-6">       
                                    <p>Plain Rice</p>
@@ -374,9 +497,10 @@ function Menu () {
                         </div>
                         <div className="col-md-3">
                             {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Khebabs</h4>}
-                            <MediaQuery minDeviceWidth={1024}>
+                            {isDesktopOrLaptop &&
                                 <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Khebabs</p>
-                            </MediaQuery> 
+                            }
+                            
                             <p>Beef </p>
                             <p>Goat</p>
                             <p>Gizzard</p>
@@ -386,9 +510,10 @@ function Menu () {
 
                         <div className="col-md-3">
                         {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Desert</h4>}
-                        <MediaQuery minDeviceWidth={1024}>
-                                <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Desert</p>
-                            </MediaQuery> 
+                        {isDesktopOrLaptop &&
+                            <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Desert</p>
+                        }
+                     
                             <p>Nkate Cake </p>
                             <p>Fresh Fruit</p>
                             <p>Atadwe Milk (Tiger Nut Pudding)</p>
@@ -398,9 +523,10 @@ function Menu () {
 
                         <div className="col-md-3">      
                             {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Grills</h4>}
-                            <MediaQuery minDeviceWidth={1024}>
+
+                            {isDesktopOrLaptop &&
                                 <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Grills</p>
-                            </MediaQuery>
+                            }
                             <p>Tilapia </p>
                             <p>Chicken</p>
                             <p>Guinea Fowl</p>
@@ -414,9 +540,9 @@ function Menu () {
 
                         <div className="col-md-3">
                         {isTabletOrMobile && <h4 style={{color: '#FF6B05', fontFamily: 'Quicksand', fontSize: '40px', marginBottom: '1.2em'}}>Local Drinks</h4>}
-                        <MediaQuery minDeviceWidth={1024}>
-                                <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Local Drinks</p>
-                            </MediaQuery> 
+                        {isDesktopOrLaptop &&
+                            <p style={{color: '#FF6B05', fontSize: '40px', marginBottom: '1.2em'}}>Local Drinks</p>
+                        }
                             <p>Palm Wine </p>
                             <p> Asaana</p>
                             <p> Lamugin</p>
@@ -424,6 +550,71 @@ function Menu () {
                         </div>
 
 
+                    </div>
+
+                    <div className="row" style={{marginTop: '5em'}}>
+                        <div className="col-12" style={{textAlign: 'center', margin: '.5em auto'}}>
+                            <img src="/assets/img/menu.png" style={{width: '50%'}}/>
+                        </div>
+
+                        <div className="col-md-3 col-sm-12" style={{textAlign: 'center'}}>
+                            <img src="/assets/img/group01.png" style={{width: '40%', marginBottom: '1.5em'}}/>
+                            <p style={{color: '#FF6B05'}}>1 Soup</p>
+                            <p style={{color: '#FF6B05'}}>1 Stew</p>
+                            <p style={{color: '#FF6B05'}}>2 Sides</p>
+                            <p style={{color: '#FF6B05'}}>1 Dessert</p>
+                            <p style={{color: '#FF6B05'}}>1 Local Drink</p>
+                        </div>
+
+                        <div className="col-md-3 col-sm-12" style={{textAlign: 'center'}}>
+                            <img src="/assets/img/group02.png" style={{width: '40%', marginBottom: '1.5em'}}/>
+                            <p style={{color: '#FF6B05'}}>1 Soup</p>
+                            <p style={{color: '#FF6B05'}}>2 Stews</p>
+                            <p style={{color: '#FF6B05'}}>3 Sides</p>
+                            <p style={{color: '#FF6B05'}}>1 Grill</p>
+                            <p style={{color: '#FF6B05'}}>2 Desserts</p>
+                            <p style={{color: '#FF6B05'}}>2 Local Drinks</p>
+                        </div>
+
+                        <div className="col-md-3 col-sm-12" style={{textAlign: 'center'}}>
+                            <img src="/assets/img/group03.png" style={{width: '40%', marginBottom: '1.5em'}}/>
+                            <p style={{color: '#FF6B05'}}>2 Soup</p>
+                            <p style={{color: '#FF6B05'}}>2 Stews</p>
+                            <p style={{color: '#FF6B05'}}>3 Sides</p>
+                            <p style={{color: '#FF6B05'}}>1 Grill</p>
+                            <p style={{color: '#FF6B05'}}>3 Desserts</p>
+                            <p style={{color: '#FF6B05'}}>2 Local Drinks</p>
+                        </div>
+
+                        <div className="col-md-3 col-sm-12" style={{textAlign: 'center'}}>
+                            <img src="/assets/img/group04.png" style={{width: '40%', marginBottom: '1.5em'}}/>
+                            <p style={{color: '#FF6B05'}}>3 Soup</p>
+                            <p style={{color: '#FF6B05'}}>3 Stews</p>
+                            <p style={{color: '#FF6B05'}}>4 Sides</p>
+                            <p style={{color: '#FF6B05'}}>2 Grill</p>
+                            <p style={{color: '#FF6B05'}}>4 Desserts</p>
+                            <p style={{color: '#FF6B05'}}>3 Local Drinks</p>
+                        </div>
+
+                        <div className="col-12" style={{textAlign: 'center', margin: '2em auto'}}>
+                            <img src="/assets/img/banner.png" style={{width: '100%'}}/>
+                        </div>
+                    </div>
+                    <div className="row" style={{margin: '1em auto'}}>
+                        <div className="col-md-3 col-sm-12 mx-auto text-center">
+                            <button onClick={()=>{navigate("shop")}} type="button" class="btn btn-sm btn-primary" style={{width: '100%', background: '#FF6B05 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#FF6B05', borderRadius: '39px', opacity: '1', color: 'white'}}>Proceed To Online Shop <i className="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div className="row" style={{marginTop: '3em', marginBottom: '1em'}}>
+                        <div className="col-md-12 col-sm-12 mx-auto text-center">
+                            <img src="/assets/img/extra.png" style={{width: '40%'}}/>
+                        </div>
+                    </div>
+
+                    <div className="row" style={{marginTop: '1em'}}>
+                        <div className="col-md-3 col-sm-12">
+                            <img src="/assets/img/extra01.png" style={{width: '100%'}}/>
+                        </div>
                     </div>
 
                 </div>
