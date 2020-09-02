@@ -38,7 +38,7 @@ function Reservations () {
                                 <div class="row gap-y">
                                     <div className="col-md-10 mx-auto">
                                     <p style={{color: '#4C1A16', fontSize: '25px',  fontWeight: 'bold'}}>BOOK A SEAT AT OUR TABLES</p>
-                                    <p style={{fontSize: '14px',color: '#4C1A16'}}>Kindly note that you will receive a confirmation email once your reservation has been successful. If you do not receive this confirmation email, there may have been an error in your reservation. Please contact our reservations team on ( +233 302 77 06 06 +233 268 02 99 68 +233 558 70 85 94 ) if you have any queries.</p>
+                                    <p style={{fontSize: '14px',color: '#4C1A16'}}>Kindly note that all reservations hold for a maximum of 2hrs. You will receive a confirmation email once your reservation has been successful. If you do not receive this confirmation email, there may have been an error in your reservation. Please contact our reservations team on ( +233 302 77 06 06 +233 268 02 99 68 reservations@azmerarestaurant.com) if you have any queries.</p>
                                     <p style={{color: '#4C1A16', fontSize: '14px'}}>SELECT DINING DETALS TO BOOK</p>
                                     <form  action="https://formspree.io/reservations@azmerarestaurant.com" method="POST">
                                         <div className="row" style={{padding: '0px'}}>
@@ -81,7 +81,7 @@ function Reservations () {
                                         <div className="row" style={{padding: '0px'}}>
                                             <div className="col-6" style={{paddingRight: '0px'}}>
                                                 <div class="form-group" style={{padding: '0px'}}>
-                                                    <input type="text" onChange={(e)=>{setPeople(e.target.value)}} name="Reservations-People" class="custom-form-control" placeholder="No. of people" style={{fontSize: '12px', width: '100%', background: 'transparent', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.5em .5em'}} />
+                                                    <input type="text" onChange={(e)=>{setPeople(e.target.value)}} name="Reservations-People" class="custom-form-control" placeholder="No. of adults" style={{fontSize: '12px', width: '100%', background: 'transparent', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.5em .5em'}} />
                                                 </div>
                                             </div>
                                             <div className="col-6" style={{paddingLeft: '0px'}}>

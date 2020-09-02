@@ -81,7 +81,17 @@ export default function NavbarMain(props){
                       <nav className="nav nav-navbar ml-auto">
                         <Link href="/"><a className="nav-link" style={{color: page == "home" ? "#FF6B05" : null}} href="/">Home</a></Link>
                         <Link href="/discover"><a className="nav-link" style={{color: page == "discover" ? "#FF6B05" : null}}>Discover Azmera</a></Link>
-                        <Link href="/menu"><a className="nav-link" style={{color: page == "menu" ? "#FF6B05" : null}}>Menu</a></Link>
+                        <div className="dropbtn">
+                          <Link href="/menu">
+                            <a className="nav-link" style={{color: page == "menu" ? "#FF6B05" : null}}>Menu</a>
+                          </Link>
+                          <div className="dropdown-content">
+                            <a href="/menu#azmera_specials">Azmera Specials</a>
+                            <a href="/menu#family_platter">Family platter</a>
+                            <a href="/menu#buffet_basket">Buffet Basket</a>
+                            <a href="/menu#xpress_specials">Xpress Specials</a>
+                          </div>
+                        </div>
                         <Link href="/gallery"><a className="nav-link" style={{color: page == "gallery" ? "#FF6B05" : null}}>Gallery</a></Link>
                         <Link href="/work"><a className="nav-link" style={{color: page == "work" ? "#FF6B05" : null}}>Work With Us</a></Link>
                         <Link href="/contact"><a className={page == "contact" ? "nav-link active" : "nav-link"} style={{color: page == "contact" ? "#FF6B05" : null}}>Contact</a></Link>

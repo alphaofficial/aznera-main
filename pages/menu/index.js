@@ -22,18 +22,18 @@ function Menu () {
 
     return (
         <Layout page="menu">
-            <section class="section" style={{backgroundColor: 'white'}}>
-                <div class="container">
+            <section className="section" style={{backgroundColor: 'white'}}>
+                <div className="container">
                     <div className="row" style={{marginTop: '2em'}}>
                         <div className="col-md-12 text-center" style={{ marginBottom: '2em', marginTop: '2em'}}>
-                            <h1 class="fw-500">Menu</h1>
+                            <h1 className="fw-500">Menu</h1>
                             <div style={{width: '100%'}}>
                                 <p>Experience Our Palatable Culture</p>
                             </div>
                         
                         </div>
 
-                        <div className="col-md-12">
+                        <div className="col-md-12" id="azmera_specials">
                             <p style={{textTransform: 'uppercase', fontWeight: 'bold', fontSize: '20px', textAlign: 'left', fontFamily: 'Belligan'}}><span style={{color: '#4C1A16'}}>Azmera</span> <span style={{color: '#FF6B05',textDecoration: 'underline', textDecorationThickness: '10%', textDecorationColor: '#4C1A16'}}>Specials</span></p> 
                         </div>
                         <div className="col-md-4 text-center">
@@ -155,14 +155,14 @@ function Menu () {
 
                     <div className="row" style={{marginTop: '3em'}}>
                         <div className="col-md-4 mx-auto text-center">
-                            <button onClick={()=>{navigate("shop")}} type="button" class="btn btn-sm btn-primary" style={{width: '100%', background: '#4C1A16 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#4C1A16', borderRadius: '39px', opacity: '1', color: 'white'}}>Proceed To Online Shop</button>
+                            <button onClick={()=>{navigate("shop")}} type="button" className="btn btn-sm btn-primary" style={{width: '100%', background: '#4C1A16 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#4C1A16', borderRadius: '39px', opacity: '1', color: 'white'}}>Proceed To Online Shop</button>
                         </div>
                     </div>
 
 
 
 
-                    <div className="row" style={{marginTop: '5em'}}>
+                    <div className="row" style={{marginTop: '5em'}} id="family_platter">
                         <div className="col-md-12">
                             <p style={{textTransform: 'uppercase', fontWeight: 'bold', fontSize: '20px', textAlign: 'left', fontFamily: 'Belligan'}}><span style={{color: '#FF6B05'}}>Family platter</span> <span style={{color: '#4C1A16',textDecoration: 'underline', textDecorationThickness: '10%', textDecorationColor: '#4C1A16'}}>Packages</span></p> 
                         </div>
@@ -552,7 +552,7 @@ function Menu () {
 
                     </div>
 
-                    <div className="row" style={{marginTop: '5em'}}>
+                    <div className="row" id="buffet_basket" style={{marginTop: '5em'}}>
                         <div className="col-12" style={{textAlign: 'center', margin: '.5em auto'}}>
                             <img src="/assets/img/menu.png" style={{width: '50%'}}/>
                         </div>
@@ -602,19 +602,108 @@ function Menu () {
                     </div>
                     <div className="row" style={{margin: '1em auto'}}>
                         <div className="col-md-3 col-sm-12 mx-auto text-center">
-                            <button onClick={()=>{navigate("shop")}} type="button" class="btn btn-sm btn-primary" style={{width: '100%', background: '#FF6B05 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#FF6B05', borderRadius: '39px', opacity: '1', color: 'white'}}>Proceed To Online Shop <i className="fa fa-arrow-right"></i></button>
+                            <button onClick={()=>{navigate("shop")}} type="button" className="btn btn-sm btn-primary" style={{width: '100%', background: '#FF6B05 0% 0% no-repeat padding-box', boxShadow: '0px 3px 6px #00000029',  borderColor: '#FF6B05', borderRadius: '39px', opacity: '1', color: 'white'}}>Proceed To Online Shop <i className="fa fa-arrow-right"></i></button>
                         </div>
                     </div>
-                    <div className="row" style={{marginTop: '3em', marginBottom: '1em'}}>
+                    {/*Extra specials*/}
+                    <div className="row" id="xpress_specials" style={{marginTop: '7em', marginBottom: '1em'}}>
                         <div className="col-md-12 col-sm-12 mx-auto text-center">
                             <img src="/assets/img/extra.png" style={{width: '40%'}}/>
                         </div>
-                    </div>
+                    </div> 
 
+                   {/* Extra specials */}
                     <div className="row" style={{marginTop: '1em'}}>
-                        <div className="col-md-3 col-sm-12">
-                            <img src="/assets/img/extra01.png" style={{width: '100%'}}/>
-                        </div>
+                        {isDesktopOrLaptop &&
+                            <> 
+                            <div className="col-12">
+                                <div className="row">
+                                    <div className="col-md-3">
+                                        <img src="/assets/img/banku-and-tilapia.png" style={{width: '100%'}}/>
+                                    </div>
+            
+                                    <div className="col-md-3">
+                                        <img src="/assets/img/grilled-tilapia-and-akyeke.png" style={{width: '100%'}}/>
+                                    </div>
+                                    <div className="col-md-3">
+                                        <img src="/assets/img/waakye.png" style={{width: '100%'}}/>
+                                    </div>
+                                    <div className="col-md-3">
+                                        <img src="/assets/img/fufu.png" style={{width: '100%'}}/>
+                                    </div>   
+                                </div>    
+                            </div> 
+
+
+                            <div className="col-12" style={{marginTop: '2em'}}>
+                                <div className="row">
+                                    <div className="col-md-3">
+                                            <img src="/assets/img/palava-sauce.png" style={{width: '100%'}}/>
+                                        </div> 
+                                    <div className="col-md-3">
+                                        <img src="/assets/img/fried-yam-and-grilled-pork.png" style={{width: '100%'}}/>
+                                    </div>
+
+                                    <div className="col-md-3">
+                                        <img src="/assets/img/azmera-jollof.png" style={{width: '100%'}}/>
+                                    </div>
+
+                                    <div className="col-sm-3">
+                                        <img src="/assets/img/azmera-fried-rice.png" style={{width: '100%'}}/>
+                                    </div>   
+                                </div>    
+                            </div>
+
+                            <div className="col-12 mx-auto text-center" style={{marginTop: '2em'}}>
+                                <div className="row text-center">
+                                    <div className="col-md-3 mx-auto">
+                                        <img src="/assets/img/gari-fortor.png"/>
+                                    </div>  
+                                </div>    
+                            </div> 
+                            </>
+                        }
+
+                        {isTabletOrMobile &&
+                        <>
+                                <div className="col-sm-12">
+                                    <img src="/assets/img/banku-and-tilapia.png" />
+                                </div>
+        
+                                <div className="col-sm-12">
+                                    <img src="/assets/img/grilled-tilapia-and-akyeke.png"/>
+                                </div>
+                                <div className="col-sm-12">
+                                    <img src="/assets/img/waakye.png"/>
+                                </div>
+                                <div className="col-sm-12">
+                                    <img src="/assets/img/fufu.png"/>
+                                </div>
+
+                                <div className="col-sm-12">
+                                    <img src="/assets/img/palava-sauce.png" style={{width: '100%'}}/>
+                                </div>
+
+                                <div className="col-sm-12">
+                                    <img src="/assets/img/fried-yam-and-grilled-pork.png" style={{width: '100%'}}/>
+                                </div>
+
+                                <div className="col-sm-12">
+                                    <img src="/assets/img/azmera-jollof.png" style={{width: '100%'}}/>
+                                </div>
+
+                                <div className="col-sm-12">
+                                    <img src="/assets/img/azmera-fried-rice.png" style={{width: '100%'}}/>
+                                </div>
+
+                                <div className="col-sm-12">
+                                    <img src="/assets/img/gari-fortor.png"/>
+                                </div>
+                        </>
+                        }
+                        
+
+                        
                     </div>
 
                 </div>
@@ -622,20 +711,20 @@ function Menu () {
             <Media query="(min-width: 1024px)">
             {matches =>
                 matches ? (
-                    <div class="icon-bar">
-                            <a class="socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
-                            <a class="socials"  href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
-                            <a class="socials"  href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
+                    <div className="icon-bar">
+                            <a className="socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
+                            <a className="socials"  href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
+                            <a className="socials"  href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
                     </div>
                 ):
                 (
-                    <footer class="footer" style={{backgroundColor: 'white'}}>
-                        <div class="container text-center">
+                    <footer className="footer" style={{backgroundColor: 'white'}}>
+                        <div className="container text-center">
 
-                            <div class="social social-bg-pale-brand">
-                                <a class="social-facebook socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
-                                <a class="social-facebook socials" href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
-                                <a class="social-facebook socials" href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
+                            <div className="social social-bg-pale-brand">
+                                <a className="social-facebook socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
+                                <a className="social-facebook socials" href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
+                                <a className="social-facebook socials" href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
                             </div>
 
                         </div>

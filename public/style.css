@@ -57,7 +57,6 @@ h1 {
   }
 
   .nav-link:hover {
-
     color: #FF6B05!important
   }
 
@@ -238,6 +237,37 @@ hr.dash {
   font-family: 'Quicksand';
   text-transform: uppercase;
 }
+
+
+.dropbtn {
+  margin-top: 10px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4C1A16;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 39px;
+  right: 249px;
+}
+
+.dropbtn:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #FF6B05;}
+
 
 @media only screen and (max-width: 1023px) {
   h1 {
