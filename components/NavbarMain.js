@@ -35,7 +35,7 @@ export default function NavbarMain(props){
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
   const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
-  const [modalIsOpen,setIsOpen] = React.useState(false);
+  const [modalIsOpen,setIsOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
   }

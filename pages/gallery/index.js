@@ -43,11 +43,11 @@ function Gallery () {
     return (
         <Layout page="gallery">
             {isDesktopOrLaptop &&
-                    <section class="section" style={{backgroundColor: 'white'}}>
-                        <div class="container">
-                        <div class="row" style={{marginTop: '2em'}}>
+                    <section className="section" style={{backgroundColor: 'white'}}>
+                        <div className="container">
+                        <div className="row" style={{marginTop: '2em'}}>
                             <div className="col-md-12 text-center" style={{ marginBottom: '2em', marginTop: '2em'}}>
-                                <h1 class="fw-500">Gallery</h1>
+                                <h1 className="fw-500">Gallery</h1>
                                 <div style={{width: '100%'}}>
                                     <p>Explore Our Home.</p>
                                 </div>
@@ -81,7 +81,7 @@ function Gallery () {
                         
 
 
-                        <div class="row" style={{marginTop: '3em'}}>
+                        <div className="row" style={{marginTop: '3em'}}>
                             
                             
                            
@@ -106,11 +106,11 @@ function Gallery () {
                     </section>
                 }
                 {isTabletOrMobile &&
-                    <section class="section" style={{backgroundColor: 'white'}}>
-                        <div class="container">
-                        <div class="row" style={{marginTop: '2em'}}>
+                    <section className="section" style={{backgroundColor: 'white'}}>
+                        <div className="container">
+                        <div className="row" style={{marginTop: '2em'}}>
                             <div className="col-md-12 col-sm-12 text-center" style={{ marginBottom: '2em', marginTop: '2em'}}>
-                                <h1 class="fw-500">Gallery</h1>
+                                <h1 className="fw-500">Gallery</h1>
                                 <div style={{width: '100%'}}>
                                     <p>Explore Our Home.</p>
                                 </div>
@@ -128,7 +128,7 @@ function Gallery () {
                         </div>
 
 
-                        <div class="row" style={{marginTop: '3em'}}>
+                        <div className="row" style={{marginTop: '3em'}}>
                             <div className="col-sm-12 text-center" onClick={()=>{setPhotoIndex(8); setOpen(true)}}>
                                 <div style={{height: '424px', width: '80%', background: 'transparent url(/assets/gallery/09.jpg) 0% 0% no-repeat padding-box', backgroundSize: 'cover', margin: '0 auto'}}>
                                 </div>
@@ -158,21 +158,21 @@ function Gallery () {
             }
 
             {isDesktopOrLaptop &&
-                    <div class="icon-bar">
-                            <a class="socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
-                            <a class="socials"  href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
-                            <a class="socials"  href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
+                    <div className="icon-bar">
+                            <a className="socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
+                            <a className="socials"  href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
+                            <a className="socials"  href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
                     </div>
             }
             
             {isTabletOrMobile &&
-                    <footer class="footer" style={{backgroundColor: 'white'}}>
-                        <div class="container text-center">
+                    <footer className="footer" style={{backgroundColor: 'white'}}>
+                        <div className="container text-center">
 
-                            <div class="social social-bg-pale-brand">
-                                <a class="social-facebook socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
-                                <a class="social-facebook socials" href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
-                                <a class="social-facebook socials" href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
+                            <div className="social social-bg-pale-brand">
+                                <a className="social-facebook socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
+                                <a className="social-facebook socials" href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
+                                <a className="social-facebook socials" href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
                             </div>
 
                         </div>

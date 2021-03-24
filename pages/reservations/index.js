@@ -32,10 +32,10 @@ function Reservations () {
         <Layout page="contact">
             {isTabletOrMobile &&
                 <>
-                    <section class="section">
+                    <section className="section">
                         <img src="/assets/img/reservation.png"/>
-                        <div class="container py-7">
-                                <div class="row gap-y">
+                        <div className="container py-7">
+                                <div className="row gap-y">
                                     <div className="col-md-10 mx-auto">
                                     <p style={{color: '#4C1A16', fontSize: '25px',  fontWeight: 'bold'}}>BOOK A SEAT AT OUR TABLES</p>
                                     <p style={{fontSize: '14px',color: '#4C1A16'}}>Kindly note that all reservations hold for a maximum of 2hrs. You will receive a confirmation email once your reservation has been successful. If you do not receive this confirmation email, there may have been an error in your reservation. Please contact our reservations team on ( +233 302 77 06 06 +233 268 02 99 68 reservations@azmerarestaurant.com) if you have any queries.</p>
@@ -44,57 +44,57 @@ function Reservations () {
                                         <div className="row" style={{padding: '0px'}}>
                                             <div className="col-6" style={{paddingRight: '0px'}}>
                                                 <input type="text" hidden={true} name="Website Reservations" />
-                                                <div class="form-group">
-                                                    <input type="text" onChange={(e)=>{setName(e.target.value)}} name="Reservations-Name" class="custom-form-control" placeholder="Name" style={{fontSize: '12px', width: '100%', background: 'white', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em'}} />
+                                                <div className="form-group">
+                                                    <input type="text" onChange={(e)=>{setName(e.target.value)}} name="Reservations-Name" className="custom-form-control" placeholder="Name" style={{fontSize: '12px', width: '100%', background: 'white', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em'}} />
                                                 </div>
                                             </div>
                                             <div className="col-6" style={{paddingLeft: '0px'}}>
-                                                <div class="form-group" style={{padding: '0px'}}>
-                                                    <input type="text" onChange={(e)=>{setPhone(e.target.value)}} name="Reservations-Phone" class="custom-form-control" placeholder="Phone number" style={{fontSize: '12px', width: '100%', background: 'transparent', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em'}} />
+                                                <div className="form-group" style={{padding: '0px'}}>
+                                                    <input type="text" onChange={(e)=>{setPhone(e.target.value)}} name="Reservations-Phone" className="custom-form-control" placeholder="Phone number" style={{fontSize: '12px', width: '100%', background: 'transparent', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em'}} />
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="row" style={{padding: '0px'}}>
                                             <div className="col-6" style={{paddingRight: '0px'}}>
-                                                <div class="form-group">
-                                                    <input type="text" onChange={(e)=>{setEmail(e.target.value)}} name="Reservations-Email" class="custom-form-control" placeholder="Email" style={{fontSize: '12px', width: '100%', background: 'white', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em'}} />
+                                                <div className="form-group">
+                                                    <input type="text" onChange={(e)=>{setEmail(e.target.value)}} name="Reservations-Email" className="custom-form-control" placeholder="Email" style={{fontSize: '12px', width: '100%', background: 'white', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em'}} />
                                                 </div>
                                             </div>
                                             <div className="col-6" style={{paddingLeft: '0px'}}>
-                                                <div class="form-group" style={{padding: '0px'}}>
-                                                    <input type="text" onChange={(e)=>{setChoice(e.target.value)}} name="Reservations-Choice" class="custom-form-control" placeholder="Buffet Service or A la Carte" style={{fontSize: '12px', width: '100%', background: 'transparent', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em'}} />
+                                                <div className="form-group" style={{padding: '0px'}}>
+                                                    <input type="text" onChange={(e)=>{setChoice(e.target.value)}} name="Reservations-Choice" className="custom-form-control" placeholder="Buffet Service or A la Carte" style={{fontSize: '12px', width: '100%', background: 'transparent', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em'}} />
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="row" style={{padding: '0px'}}>
                                             <div className="col-6" style={{paddingRight: '0px'}}>
-                                                <div class="form-group">
-                                                    <input type="text" onChange={(e)=>{setTableName(e.target.value)}} name="Reservations-Table-Name" class="custom-form-control" placeholder="Table name" style={{fontSize: '12px', width: '100%', background: 'white', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em'}} />
+                                                <div className="form-group">
+                                                    <input type="text" onChange={(e)=>{setTableName(e.target.value)}} name="Reservations-Table-Name" className="custom-form-control" placeholder="Table name" style={{fontSize: '12px', width: '100%', background: 'white', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em'}} />
                                                 </div>
                                             </div>
                                             <div className="col-6" style={{paddingLeft: '0px'}}>
-                                                <div class="form-group" style={{padding: '0px'}}>
-                                                    <input type="text" onChange={(e)=>{setNumberOfChildren(e.target.value)}} name="Reservations-Children" class="custom-form-control" placeholder="No. of children" style={{fontSize: '12px', width: '100%', background: 'transparent', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em'}} />
+                                                <div className="form-group" style={{padding: '0px'}}>
+                                                    <input type="text" onChange={(e)=>{setNumberOfChildren(e.target.value)}} name="Reservations-Children" className="custom-form-control" placeholder="No. of children" style={{fontSize: '12px', width: '100%', background: 'transparent', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.2em .5em'}} />
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="row" style={{padding: '0px'}}>
                                             <div className="col-6" style={{paddingRight: '0px'}}>
-                                                <div class="form-group" style={{padding: '0px'}}>
-                                                    <input type="text" onChange={(e)=>{setPeople(e.target.value)}} name="Reservations-People" class="custom-form-control" placeholder="No. of adults" style={{fontSize: '12px', width: '100%', background: 'transparent', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.5em .5em'}} />
+                                                <div className="form-group" style={{padding: '0px'}}>
+                                                    <input type="text" onChange={(e)=>{setPeople(e.target.value)}} name="Reservations-People" className="custom-form-control" placeholder="No. of adults" style={{fontSize: '12px', width: '100%', background: 'transparent', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.5em .5em'}} />
                                                 </div>
                                             </div>
                                             <div className="col-6" style={{paddingLeft: '0px'}}>
-                                                <div class="form-group" style={{padding: '0px'}}>
-                                                    <input type="text" onChange={(e)=>{setTime(e.target.value)}} name="Reservations-Time" class="custom-form-control" placeholder="Time" style={{fontSize: '12px', width: '100%', background: 'white', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.5em .5em'}} />
+                                                <div className="form-group" style={{padding: '0px'}}>
+                                                    <input type="text" onChange={(e)=>{setTime(e.target.value)}} name="Reservations-Time" className="custom-form-control" placeholder="Time" style={{fontSize: '12px', width: '100%', background: 'white', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.5em .5em'}} />
                                                 </div>
                                             </div>
                                         </div>
                                         <p style={{color: '#4C1A16', fontSize: '14px'}}>Select a Date</p>
                                         <div className="row" style={{padding: '0px', marginBottom: '2em'}}>
                                             <div className="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="date" onChange={(e)=>{setDate(e.target.value)}} name="Reservations-Date" class="custom-form-control" style={{fontSize: '12px', width: '100%', background: 'white', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.5em .5em'}} />
+                                                <div className="form-group">
+                                                    <input type="date" onChange={(e)=>{setDate(e.target.value)}} name="Reservations-Date" className="custom-form-control" style={{fontSize: '12px', width: '100%', background: 'white', border: '3px solid #4C1A16', color: '#4C1A16', padding: '.5em .5em'}} />
                                                 </div>
                                             </div>
                                         </div>
@@ -111,13 +111,13 @@ function Reservations () {
                                 </div>
                             </div>
                     </section>  
-                    <footer class="footer" style={{backgroundColor: 'white'}}>
-                    <div class="container text-center">
+                    <footer className="footer" style={{backgroundColor: 'white'}}>
+                    <div className="container text-center">
 
-                        <div class="social social-bg-pale-brand">
-                            <a class="social-facebook socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
-                            <a class="social-facebook socials" href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
-                            <a class="social-facebook socials" href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
+                        <div className="social social-bg-pale-brand">
+                            <a className="social-facebook socials" href="https://web.facebook.com/AzmeraRestaurantgh/"><img src="/assets/img/facebook.svg" alt="FB"/></a>
+                            <a className="social-facebook socials" href="https://twitter.com/Azmera_Res"><img src="/assets/img/twitter.svg" alt="TW"/></a>
+                            <a className="social-facebook socials" href="https://www.instagram.com/azmerarestaurant/"><img src="/assets/img/instagram.svg" alt="IG"/></a>
                         </div>
 
                     </div>
